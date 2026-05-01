@@ -67,6 +67,25 @@
         { "name": "Inglés completo", "medium": true, "price": "Gs. 120.000", "time": "25 min", "packagePrice": "6 sesiones: Gs. 600.000" }
       ]
     },
+    "gallery": {
+      "title": "Resultados reales",
+      "subtitle": "El IPL funciona. Resultados visibles desde la primera sesión.",
+      "placeholder": true,
+      "items": [
+        { "title": "Antes y después", "description": "Resultados después de 3 sesiones", "emoji": "✨" },
+        { "title": "Axilas", "description": "Sin vello después de 6 sesiones", "emoji": "🌸" },
+        { "title": "Piernas", "description": "Piel suave y sin foliculitis", "emoji": "🦋" },
+        { "title": "Bikini", "description": "Resultado permanente", "emoji": "⭐" }
+      ]
+    },
+    "testimonials": {
+      "title": "Lo que dicen mis clientas",
+      "items": [
+        { "quote": "Súper recomendado. Daya es muy profesional y la sesión no duele nada. En 3 sesiones ya noté la diferencia.", "author": "Laura", "rating": 5 },
+        { "quote": "Que venga a mi casa me cambió la vida. No tengo tiempo de ir a clínicas y esto es mucho más cómodo.", "author": "Carolina", "rating": 5 },
+        { "quote": "Después de años gastando en cera, el IPL es la mejor inversión. Ya no tengo vello encarnado.", "author": "Ana", "rating": 5 }
+      ]
+    },
     "faq": {
       "title": "Preguntas frecuentes",
       "items": [

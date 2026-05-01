@@ -126,6 +126,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Gallery */}
+      {h.gallery?.items?.length > 0 && (
+        <section className="py-16">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-2">{h.gallery.title}</h2>
+            <p className="text-center text-gray-500 mb-10">{h.gallery.subtitle}</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {h.gallery.items.map((g: any, i: number) => (
+                <div key={i} className="bg-gradient-to-br from-[#FFF1EE] to-[#FDF2F8] rounded-xl p-8 text-center border border-[#E8795B]/10">
+                  <div className="text-4xl mb-3">{g.emoji}</div>
+                  <h3 className="font-bold text-sm">{g.title}</h3>
+                  <p className="text-xs text-gray-500 mt-1">{g.description}</p>
+                </div>
+              ))}
+            </div>
+            {h.gallery.placeholder && (
+              <p className="text-center text-xs text-gray-400 mt-4">📸 Próximamente: fotos reales de antes y después</p>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Testimonials */}
+      {h.testimonials?.items?.length > 0 && (
+        <section className="py-16 bg-[#FFFBFA]">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-10">{h.testimonials.title}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {h.testimonials.items.map((t: any, i: number) => (
+                <div key={i} className="bg-white rounded-xl p-6 border border-gray-100">
+                  <div className="flex gap-1 mb-3">{Array.from({ length: t.rating }).map((_: any, j: number) => <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />)}</div>
+                  <p className="text-gray-600 text-sm italic">"{t.quote}"</p>
+                  <p className="font-semibold text-sm mt-4">— {t.author}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
       <section className="py-16 bg-[#FFFBFA]">
         <div className="max-w-3xl mx-auto px-4">
