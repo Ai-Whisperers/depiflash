@@ -30,8 +30,27 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "DepiFlash",
+    description: "Depilación láser IPL a domicilio en Asunción y Gran Asunción.",
+    provider: { "@type": "Person", name: "DepiFlash" },
+    areaServed: ["Asunción", "Fernando de la Mora", "San Lorenzo", "Luque", "Lambaré", "Mariano Roque Alonso", "Ñemby"],
+    telephone: "+595974202025",
+    url: "https://depiflash.paragu-ai.com",
+    serviceType: "Depilación láser IPL",
+  }
+
   return (
     <html lang="es" className={`${playfair.variable} ${inter.variable}`}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2XQZR3J6K" />
+        <script dangerouslySetInnerHTML={{
+          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2XQZR3J6K',{cookie_flags:'max-age=7200;secure;samesite=none'});`
+        }} />
+      </head>
       <body className="antialiased">{children}</body>
     </html>
   )
