@@ -1,0 +1,97 @@
+{
+  "siteName": "DepiFlash",
+  "businessName": "DepiFlash",
+  "tagline": "Depilación láser IPL a domicilio en Asunción",
+  "whatsapp": "+595974202025",
+  "whatsappLink": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
+  "phone": "+595 974 202 025",
+  "email": "info@depiflash.com.py",
+  "coverage": "Asunción y Gran Asunción (Fernando de la Mora, San Lorenzo, Luque, Lambaré, Mariano Roque Alonso, Ñemby)",
+  "navigation": {
+    "businessName": "DepiFlash",
+    "ctaText": "Reservar por WhatsApp",
+    "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
+    "items": [
+      { "label": "Inicio", "href": "/" },
+      { "label": "Servicios", "href": "/servicios" },
+      { "label": "Cómo funciona", "href": "/como-funciona" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "Contacto", "href": "/contacto" }
+    ]
+  },
+  "home": {
+    "seo": {
+      "title": "DepiFlash — Depilación Láser IPL a Domicilio en Asunción",
+      "description": "Depilación láser IPL a domicilio en Asunción y Gran Asunción. Sin moverte de tu casa. Resultados desde la primera sesión. WhatsApp +595 974 202 025."
+    },
+    "hero": {
+      "headline": "Depilación láser IPL en tu casa",
+      "subheadline": "Sin moverte, sin esperas, sin vergüenza. Voy a tu domicilio con el equipo IPL y en 30 minutos estás lista. Asunción y Gran Asunción.",
+      "ctaPrimaryText": "Reservar sesión",
+      "ctaPrimaryHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL",
+      "ctaSecondaryText": "Ver precios",
+      "ctaSecondaryHref": "/servicios"
+    },
+    "benefits": {
+      "title": "Por qué DepiFlash",
+      "items": [
+        { "icon": "Home", "text": "En tu casa", "description": "Voy a tu domicilio en el día y horario que elijas. Sin traslados, sin esperas." },
+        { "icon": "Zap", "text": "IPL profesional", "description": "Tecnología IPL de última generación. Resultados visibles desde la primera sesión." },
+        { "icon": "Clock", "text": "Sesiones de 30 min", "description": "Rápido y efectivo. Zonas pequeñas en 15 min, completas en 45 min." },
+        { "icon": "Shield", "text": "Resultado permanente", "description": "8 a 10 sesiones y olvidate de la cera para siempre. Piel suave todo el año." }
+      ]
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "4 pasos y estás lista",
+      "steps": [
+        { "number": 1, "title": "Reservá", "description": "Escribime por WhatsApp, decime qué zona querés tratarte y elegimos día y horario. Te confirmo al toque.", "icon": "MessageCircle" },
+        { "number": 2, "title": "Preparate", "description": "Afeitá la zona 24 horas antes. NO uses cera, crema depilatoria ni máquina de afeitar eléctrica. Piel limpia y sin cremas el día de la sesión.", "icon": "Razor" },
+        { "number": 3, "title": "Recibime en tu casa", "description": "Llego con el equipo IPL a tu domicilio. La sesión dura entre 15 y 45 minutos según la zona. Sin dolor, solo una sensación de calor.", "icon": "Truck" },
+        { "number": 4, "title": "Disfrutá los resultados", "description": "De 8 a 10 sesiones espaciadas cada 4-6 semanas y el vello no vuelve a crecer. Piel suave, sin foliculitis, sin encarnaciones.", "icon": "Sparkles" }
+      ]
+    },
+    "pricing": {
+      "title": "Precios por sesión",
+      "subtitle": "También ofrezco paquetes con descuento. Consultame por WhatsApp.",
+      "note": "Los precios incluyen desplazamiento dentro de Asunción y Gran Asunción",
+      "zones": [
+        { "name": "Labio superior", "small": true, "price": "Gs. 50.000", "time": "10 min", "packagePrice": "6 sesiones: Gs. 250.000" },
+        { "name": "Axilas", "small": true, "price": "Gs. 70.000", "time": "15 min", "packagePrice": "6 sesiones: Gs. 350.000" },
+        { "name": "Línea de bikini", "small": true, "price": "Gs. 80.000", "time": "15 min", "packagePrice": "6 sesiones: Gs. 400.000" },
+        { "name": "Media pierna", "medium": true, "price": "Gs. 100.000", "time": "25 min", "packagePrice": "6 sesiones: Gs. 500.000" },
+        { "name": "Brazos completos", "medium": true, "price": "Gs. 100.000", "time": "25 min", "packagePrice": "6 sesiones: Gs. 500.000" },
+        { "name": "Piernas completas", "large": true, "price": "Gs. 180.000", "time": "45 min", "packagePrice": "6 sesiones: Gs. 900.000" },
+        { "name": "Espalda completa", "large": true, "price": "Gs. 200.000", "time": "45 min", "packagePrice": "6 sesiones: Gs. 1.000.000" },
+        { "name": "Pecho / abdomen", "medium": true, "price": "Gs. 120.000", "time": "25 min", "packagePrice": "6 sesiones: Gs. 600.000" },
+        { "name": "Inglés completo", "medium": true, "price": "Gs. 120.000", "time": "25 min", "packagePrice": "6 sesiones: Gs. 600.000" }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        { "question": "¿Duele?", "answer": "No. La tecnología IPL produce una sensación de calor soportable. La mayoría de clientes lo describen como 'como un chasquido de goma'." },
+        { "question": "¿Cuántas sesiones necesito?", "answer": "Depende de la zona y del tipo de vello. Normalmente 8 a 10 sesiones espaciadas cada 4-6 semanas para resultados permanentes. Desde la primera sesión ya se nota la diferencia." },
+        { "question": "¿Cómo me preparo?", "answer": "Afeitá la zona 24 horas antes de la sesión. La piel debe estar limpia, sin cremas, desodorante o maquillaje. NO uses cera, crema depilatoria ni pinzas." },
+        { "question": "¿Qué zonas tratás?", "answer": "Todas las zonas del cuerpo: labio, axilas, bikini, piernas, brazos, espalda, pecho, abdomen, inglés. Consultame por zonas específicas." },
+        { "question": "¿Hombres también?", "answer": "Sí. DepiFlash atiende a mujeres y hombres. Espalda, pecho, barba, hombros — todo se puede tratar con IPL." },
+        { "question": "¿Cada cuánto me tengo que hacer las sesiones?", "answer": "Cada 4 a 6 semanas. El ciclo de crecimiento del vello es de aproximadamente 30 días, por eso hay que esperar ese tiempo entre sesiones." },
+        { "question": "¿Qué contraindicaciones hay?", "answer": "No se puede hacer láser si: estás embarazada o amamantando, tenés la piel bronceada o con quemaduras solares, tenés heridas o infecciones en la zona, o estás tomando medicamentos fotosensibles. Consultame si tenés dudas." },
+        { "question": "¿Hasta dónde llegás?", "answer": "Cubro Asunción y Gran Asunción: Fernando de la Mora, San Lorenzo, Luque, Lambaré, Mariano Roque Alonso, Ñemby. Si estás más lejos consultame." }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "question": "¿Duele?", "answer": "No. La tecnología IPL produce una sensación de calor soportable. La mayoría de clientes lo describen como 'como un chasquido de goma'." },
+      { "question": "¿Cuántas sesiones necesito?", "answer": "Depende de la zona y del tipo de vello. Normalmente 8 a 10 sesiones espaciadas cada 4-6 semanas para resultados permanentes." },
+      { "question": "¿Cómo me preparo?", "answer": "Afeitá la zona 24 horas antes de la sesión. Piel limpia, sin cremas, desodorante o maquillaje. NO uses cera, crema depilatoria ni pinzas." },
+      { "question": "¿Qué zonas tratás?", "answer": "Todas las zonas del cuerpo: labio, axilas, bikini, piernas, brazos, espalda, pecho, abdomen, inglés." },
+      { "question": "¿Hombres también?", "answer": "Sí. Espalda, pecho, barba, hombros — todo se puede tratar con IPL." },
+      { "question": "¿Cada cuánto?", "answer": "Cada 4 a 6 semanas. El ciclo de crecimiento del vello requiere ese espacio entre sesiones." },
+      { "question": "¿Contraindicaciones?", "answer": "No si estás embarazada, bronceada, con heridas en la zona, o tomando medicamentos fotosensibles." },
+      { "question": "¿Hasta dónde llegás?", "answer": "Asunción y Gran Asunción. Consultame si estás más lejos." }
+    ]
+  }
+}
