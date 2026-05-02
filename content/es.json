@@ -6,6 +6,7 @@
   "whatsappLink": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
   "phone": "+595 974 202 025",
   "email": "info@depiflash.com.py",
+  "instagram": "https://www.instagram.com/depiflash.py",
   "coverage": "Asunción y Gran Asunción (Fernando de la Mora, San Lorenzo, Luque, Lambaré, Mariano Roque Alonso, Ñemby)",
   "navigation": {
     "businessName": "DepiFlash",
@@ -31,6 +32,10 @@
       "ctaPrimaryHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL",
       "ctaSecondaryText": "Ver precios",
       "ctaSecondaryHref": "/servicios"
+    },
+    "dan": {
+      "title": "Conocé a Dan",
+      "description": "Hola, soy Dan. Hago Uber en Asunción y también ofrezco depilación IPL a domicilio. Me capacitó y tengo mi equipo. Me gusta ayudar a las personas a sentirse bien con su cuerpo. Escribime y coordinamos."
     },
     "benefits": {
       "title": "Por qué DepiFlash",
@@ -95,6 +100,7 @@
         { "question": "¿Qué zonas tratás?", "answer": "Todas las zonas del cuerpo: labio, axilas, bikini, piernas, brazos, espalda, pecho, abdomen, inglés. Consultame por zonas específicas." },
         { "question": "¿Hombres también?", "answer": "Sí. DepiFlash atiende a mujeres y hombres. Espalda, pecho, barba, hombros — todo se puede tratar con IPL." },
         { "question": "¿Cada cuánto me tengo que hacer las sesiones?", "answer": "Cada 4 a 6 semanas. El ciclo de crecimiento del vello es de aproximadamente 30 días, por eso hay que esperar ese tiempo entre sesiones." },
+        { "question": "¿Ofrecen descuentos especiales?", "answer": "Sí, tenemos un programa de reafirmación de género con precios especiales para depilación facial. Escribinos por WhatsApp y te contamos sin compromiso." },
         { "question": "¿Qué contraindicaciones hay?", "answer": "No se puede hacer láser si: estás embarazada o amamantando, tenés la piel bronceada o con quemaduras solares, tenés heridas o infecciones en la zona, o estás tomando medicamentos fotosensibles. Consultame si tenés dudas." },
         { "question": "¿Hasta dónde llegás?", "answer": "Cubro Asunción y Gran Asunción: Fernando de la Mora, San Lorenzo, Luque, Lambaré, Mariano Roque Alonso, Ñemby. Si estás más lejos consultame." }
       ]
@@ -109,8 +115,15 @@
       { "question": "¿Qué zonas tratás?", "answer": "Todas las zonas del cuerpo: labio, axilas, bikini, piernas, brazos, espalda, pecho, abdomen, inglés." },
       { "question": "¿Hombres también?", "answer": "Sí. Espalda, pecho, barba, hombros — todo se puede tratar con IPL." },
       { "question": "¿Cada cuánto?", "answer": "Cada 4 a 6 semanas. El ciclo de crecimiento del vello requiere ese espacio entre sesiones." },
+      { "question": "¿Ofrecen descuentos especiales?", "answer": "Sí, tenemos un programa de reafirmación de género con precios especiales. Escribinos por WhatsApp y te contamos." },
       { "question": "¿Contraindicaciones?", "answer": "No si estás embarazada, bronceada, con heridas en la zona, o tomando medicamentos fotosensibles." },
       { "question": "¿Hasta dónde llegás?", "answer": "Asunción y Gran Asunción. Consultame si estás más lejos." }
     ]
+  },
+  "reafirmacion": {
+    "title": "Programa de Reafirmación",
+    "description": "Consultá por nuestro programa de reafirmación de género. Depilación facial con precios especiales (20% de descuento) y un ambiente de respeto. Primera sesión gratis para las primeras 10 personas.",
+    "ctaLabel": "Consultar por WhatsApp",
+    "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20sobre%20el%20programa%20de%20reafirmaci%C3%B3n"
   }
 }

@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
-import { MessageCircle, Mail, MapPin } from "lucide-react"
+import { Instagram, MessageCircle, Mail, MapPin } from "lucide-react"
 
 const content = raw as any
 
@@ -29,6 +29,13 @@ export default function ContactoPage() {
               <div>
                 <h3 className="font-bold">Email</h3>
                 <a href="mailto:info@depiflash.com.py" className="text-[#E8795B] hover:underline">info@depiflash.com.py</a>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <Instagram className="w-6 h-6 text-[#E8795B] shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold">Instagram</h3>
+                <a href="https://www.instagram.com/depiflash.py" target="_blank" rel="noopener noreferrer" className="text-[#E8795B] hover:underline">@depiflash.py</a>
               </div>
             </div>
             <div className="flex items-start gap-4">

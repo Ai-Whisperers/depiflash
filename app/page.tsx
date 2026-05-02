@@ -126,6 +126,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Conocé a Dan */}
+      <section className="py-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="mx-auto mb-6 w-24 h-24 rounded-full bg-gradient-to-br from-[#E8795B] to-[#2DD4BF] flex items-center justify-center text-white text-3xl font-bold shadow-lg">D</div>
+          <h2 className="text-3xl font-bold mb-3">{h.dan.title}</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-6">{h.dan.description}</p>
+          <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
+            <MessageCircle className="w-5 h-5" /> {h.hero.ctaPrimaryText}
+          </a>
+        </div>
+      </section>
+
       {/* Gallery */}
       {h.gallery?.items?.length > 0 && (
         <section className="py-16">
@@ -184,6 +197,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Programa de Reafirmación */}
+      {raw.reafirmacion && (
+        <section className="py-16">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-br from-[#FFF1EE] to-[#FDF2F8] rounded-2xl p-8 border border-[#E8795B]/10">
+              <div className="text-left">
+                <h2 className="text-3xl font-bold mb-3">🏳️‍⚧️ {raw.reafirmacion.title}</h2>
+                <p className="text-gray-600 max-w-xl mb-6">{raw.reafirmacion.description}</p>
+                <a href={raw.reafirmacion.ctaHref} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
+                  <MessageCircle className="w-5 h-5" /> {raw.reafirmacion.ctaLabel}
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* CTA final */}
       <section className="relative overflow-hidden py-16" style={{ background: "linear-gradient(135deg, #E8795B 0%, #2DD4BF 100%)" }}>
         <div className="mx-auto max-w-3xl px-4 text-center">
@@ -198,7 +229,7 @@ export default function Home() {
       </section>
 
       <Footer />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero info sobre depilación láser IPL" />
+      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero info sobre depilación láser IPL a domicilio" />
       <MobileCta />
     </>
   )

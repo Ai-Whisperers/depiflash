@@ -47,6 +47,18 @@ export default function ServiciosPage() {
           </a>
         </div>
 
+        {/* Programa de Reafirmación */}
+        {raw.reafirmacion && (
+          <div className="mt-10 bg-gradient-to-br from-[#FFF1EE] to-[#FDF2F8] rounded-xl p-8 border border-[#E8795B]/20">
+            <h2 className="font-bold text-xl mb-3">🏳️‍⚧️ {raw.reafirmacion.title}</h2>
+            <p className="text-gray-600 mb-4">{raw.reafirmacion.description}</p>
+            <a href={raw.reafirmacion.ctaHref} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
+              <MessageCircle className="w-5 h-5" /> {raw.reafirmacion.ctaLabel}
+            </a>
+          </div>
+        )}
+
         <div className="mt-10 bg-[#FFFBFA] rounded-xl p-6 border border-gray-100">
           <h2 className="font-bold text-lg mb-3">📋 Preparación para la sesión</h2>
           <div className="flex items-start gap-3">

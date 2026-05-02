@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: "DepiFlash — Depilación Láser IPL a Domicilio en Asunción",
   description: "Depilación láser IPL a domicilio en Asunción y Gran Asunción. Sin moverte de tu casa. Resultados desde la primera sesión.",
   alternates: { canonical: "https://depiflash.paragu-ai.com" },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "DepiFlash — Depilación Láser IPL a Domicilio",
     description: "Depilación láser IPL en tu casa. Asunción y Gran Asunción. Resultados desde la primera sesión.",
@@ -26,6 +30,7 @@ export const metadata: Metadata = {
     siteName: "DepiFlash",
     locale: "es_PY",
     type: "website",
+    images: [{ url: "/og-image.svg", width: 1200, height: 630 }],
   },
 }
 

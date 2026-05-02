@@ -28,6 +28,7 @@ export function Footer() {
             <div className="flex flex-col gap-2 text-sm">
               <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">+595 974 202 025</a>
               <a href="mailto:info@depiflash.com.py" className="text-gray-300 hover:text-white">info@depiflash.com.py</a>
+              <a href="https://www.instagram.com/depiflash.py" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">Instagram</a>
               <span className="text-gray-500">Asunción, Paraguay</span>
             </div>
           </div>
