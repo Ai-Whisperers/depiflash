@@ -1,14 +1,12 @@
-"use client"
+import React from "react"
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://viajero.paragu-ai.com"
 
 export function JsonLd({ data }: { data: Record<string, any> }) {
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
-  )
+  return React.createElement("script", {
+    type: "application/ld+json",
+    dangerouslySetInnerHTML: { __html: JSON.stringify(data) },
+  })
 }
 
 export const storeSchema = (name: string, desc: string, url: string, phone: string) => ({
