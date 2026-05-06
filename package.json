@@ -19,7 +19,16 @@
     "@ai-whisperers/catalog": "^0.1.0",
     "@ai-whisperers/ui-extras": "^0.1.0",
     "@ai-whisperers/payments": "^0.1.0",
-    "@ai-whisperers/api-helpers": "^0.1.0"
+    "@ai-whisperers/api-helpers": "^0.1.0",
+    "@ai-whisperers/admin": "^0.1.0",
+    "@ai-whisperers/auth": "^0.1.0",
+    "@ai-whisperers/client-kit": "^0.1.0",
+    "@ai-whisperers/commerce": "^0.1.0",
+    "@ai-whisperers/i18n": "^0.1.0",
+    "@ai-whisperers/seo": "^0.1.0",
+    "@ai-whisperers/theme": "^0.1.0",
+    "@ai-whisperers/ui": "^0.1.0",
+    "@ai-whisperers/whatsapp": "^0.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.0",
@@ -34,6 +43,15 @@
     "@ai-whisperers/catalog": "^0.1.0",
     "@ai-whisperers/ui-extras": "^0.1.0",
     "@ai-whisperers/payments": "^0.1.0",
-    "@ai-whisperers/api-helpers": "^0.1.0"
+    "@ai-whisperers/api-helpers": "^0.1.0",
+    "@ai-whisperers/admin": "^0.1.0",
+    "@ai-whisperers/auth": "^0.1.0",
+    "@ai-whisperers/client-kit": "^0.1.0",
+    "@ai-whisperers/commerce": "^0.1.0",
+    "@ai-whisperers/i18n": "^0.1.0",
+    "@ai-whisperers/seo": "^0.1.0",
+    "@ai-whisperers/theme": "^0.1.0",
+    "@ai-whisperers/ui": "^0.1.0",
+    "@ai-whisperers/whatsapp": "^0.1.0"
   }
 }
