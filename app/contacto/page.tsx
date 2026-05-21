@@ -37,7 +37,7 @@ export default function ContactoPage() {
               <Instagram className="w-6 h-6 text-[#E8795B] shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold">Instagram</h3>
-                <a href="https://www.instagram.com/depiflash.py" target="_blank" rel="noopener noreferrer" className="text-[#E8795B] hover:underline">@depiflash.py</a>
+                <a href={content.instagram} target="_blank" rel="noopener noreferrer" className="text-[#E8795B] hover:underline">@depiflash.py</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
