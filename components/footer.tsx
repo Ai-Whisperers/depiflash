@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-3">
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#E8795B] to-[#2DD4BF] flex items-center justify-center text-white font-bold text-xs">DF</div>
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-[#E8A0BF] to-[#C4A4D4] flex items-center justify-center text-white font-bold text-xs">DF</div>
               <h3 className="text-lg font-bold">DepiFlash</h3>
             </div>
             <p className="text-sm text-gray-400">Depilación láser IPL a domicilio en Asunción y Gran Asunción.</p>

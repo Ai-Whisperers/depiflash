@@ -29,6 +29,39 @@
 - middleware.ts: applies to /api/admin/* routes
 - 429 response with Retry-After header
 
-**Next:** Phase 5 — Deploy to production
+**Phase 5 ✅ — Deploy to production**
+- ...
+
+**Batch A ✅ — Dan's enhancements (May 2026)**
+### 1a. "Inglés completo" → "Zona íntima completa"
+- Changed in content/es.json (pricing zone, 2 FAQ entries)
+- All hardcoded references removed
+- Zero occurrences of "inglés" remaining in codebase
+
+### 1b. Sun exposure advice — CORRECTED
+- Removed "NO te expongas al sol 48 horas antes" (wrong — before is fine)
+- Added: "Si estuviste al sol los días previos, esperá una semana antes de la sesión"
+- Added: "Después de la sesión: no te expongas la zona tratada al sol por 48 horas"
+- Added dedicated FAQ: "¿Puedo tomar sol después de la sesión?"
+- Applied across: es.json (steps, FAQ ×2), page.tsx (prep banner), servicios/page.tsx (prep section)
+
+### 1c. Color scheme — "Rose Elegance"
+| Old | New | Hex |
+|-----|-----|-----|
+| Coral | Rose | `#E8A0BF` |
+| Teal | Lavender | `#C4A4D4` |
+| Peach bg | Pink ice | `#FFF0F5` |
+| Cream bg | Lavender mist | `#F8F0FF` |
+| Pink bg | Rose water | `#FFF0F0` |
+
+Applied across all 14 files in app/ and components/
+
+### 2. Electrolysis research (strategy only)
+- Not recommended as service — IPL is superior for most clients
+- Added market context for Dan's business decision
+
+---
+## Pending
+- Phase 5 — Docker deploy to production VPS
 
 

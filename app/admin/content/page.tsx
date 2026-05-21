@@ -128,7 +128,7 @@ export default function AdminContentPage() {
             <button
               onClick={save}
               disabled={saving}
-              className="rounded-lg bg-[#E8795B] px-4 py-2 text-sm font-semibold text-white hover:bg-[#d4684e] disabled:opacity-50 transition-all"
+              className="rounded-lg bg-[#E8A0BF] px-4 py-2 text-sm font-semibold text-white hover:bg-[#D484A8] disabled:opacity-50 transition-all"
             >
               {saving ? "Guardando..." : "Guardar Cambios"}
             </button>
@@ -198,7 +198,7 @@ function Input({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded-lg border border-zinc-700/60 bg-zinc-800 px-3 py-2 text-sm text-white outline-none focus:border-[#E8795B]/50 min-h-[80px]"
+          className="w-full rounded-lg border border-zinc-700/60 bg-zinc-800 px-3 py-2 text-sm text-white outline-none focus:border-[#E8A0BF]/50 min-h-[80px]"
         />
       ) : (
         <input
@@ -207,7 +207,7 @@ function Input({
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded-lg border border-zinc-700/60 bg-zinc-800 px-3 py-2 text-sm text-white outline-none focus:border-[#E8795B]/50"
+          className="w-full rounded-lg border border-zinc-700/60 bg-zinc-800 px-3 py-2 text-sm text-white outline-none focus:border-[#E8A0BF]/50"
         />
       )}
     </div>

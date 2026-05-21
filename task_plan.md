@@ -1,133 +1,138 @@
-# DepiFlash — Complete Upgrade Plan
+# DepiFlash — Dan's Enhancement Batch Plan (May 2026)
 
-**Goal:** Move DepiFlash from hardcoded JSON content + minimal admin to a full Supabase-backed content management system matching El Viajero's patterns, with an admin editor for all business content.
+## Overview
 
-## Architecture
+4 changes from Dan's WhatsApp messages on May 20-21, 2026:
 
-```
-content/es.json (defaults)  ──┐
-                               ├── ContentProvider (merge) ──→ pages
-ej_site_config (overrides)   ──┘
-     ↑
-  /api/admin/content (PUT)
-     ↑
-  Admin Editor (tree view)
-```
-
-## Phase 1: Content System (Supabase Backend)
-
-**Goal:** Every piece of business data is editable via Supabase, not code.
-
-### 1a. Seed all content to Supabase
-- Read every field from `content/es.json`
-- Store as full `content_overrides` in `ej_site_config`
-- Makes admin the source of truth; JSON becomes just a fallback
-
-### 1b. Public content API
-- `/api/content/overrides` — returns content_overrides JSONB
-- `/api/content/path?key=home.hero.headline` — gets specific path
-- Use service role key for reads too (trusted server)
-
-### 1c. ContentProvider (client-side)
-- Already created but pages DON'T use it yet
-- Must refactor every page to use `useContent()` instead of raw JSON import
-- Footer already wired
-
-## Phase 2: Admin Content Editor
-
-**Goal:** Dan can edit prices, FAQ, phone, WhatsApp link, Instagram, SEO from a web UI.
-
-### 2a. Admin auth
-- Supabase email/password login page (already exists at `/login`)
-- AdminGuard component protecting `/admin/*`
-- `/api/admin/auth` for session verification
-
-### 2b. Content editor
-- Tree editor component showing all sections
-- Editable fields: pricing (9 zones), FAQ (9 items), testimonials, SEO fields
-- Phone, WhatsApp link, Instagram, email, coverage area
-- Save button → PUT to `/api/admin/content`
-- Confirmation toast + optimistic UI
-
-### 2c. Admin dashboard
-- Google Analytics summary (sessions, page views, top pages)
-- Content last-edited timestamp
-- Quick links to WhatsApp
-
-## Phase 3: Page Refactoring
-
-**Goal:** All pages read from ContentProvider, not hardcoded JSON.
-
-### 3a. Layout refactor
-- Wrap `ContentProvider` in root layout
-- Update `page-meta.tsx` to use content from context
-
-### 3b. Inner pages
-- `servicios/page.tsx` — prices editable via admin
-- `como-funciona/page.tsx` — steps text editable
-- `faq/page.tsx` — questions/answers editable
-- `contacto/page.tsx` — phone, Instagram, email from content
-- `home/page.tsx` — hero, benefits, testimonials, CTA text editable
-
-### 3c. Remove hardcoded values
-- Phone `+595974202025` → all references use `content.whatsapp`
-- WhatsApp links with prefilled messages → construct from `content.whatsapp` + URL-encoded message
-- Coverage area → `content.coverage`
-- Business name, tagline → read from content
-
-## Phase 4: Analytics & Rate Limiting
-
-### 4a. Rate limit middleware
-- Token-bucket rate limiter on `/api/contact` and `/api/subscribe`
-- Memory-based, resets hourly
-
-### 4b. Admin analytics
-- Vercel Analytics data via their API
-- Simple dashboard cards (today's sessions, this week, top referral)
-
-## Phase 5: Deployment
-
-### 5a. Docker Swarm
-- Verify `.env` has all Supabase vars on VPS
-- Deploy new version with `docker stack deploy`
-
-### 5b. CI/CD
-- GitHub Actions already builds
-- On merge to main → auto-deploy via deploy-vps workflow
+1. **Synonym for "Inglés completo"** → change to standard term
+2. **Electrolysis research** → add electrolysis as complementary service?  
+3. **Sun exposure advice fix** → replace "no te expongas al sol 48 horas antes" with correct advice
+4. **Color scheme** → pink pastel + feminine elegant palette
 
 ---
 
-## Priority Order
+## Batch 1: Content & Terminology
+
+### 1a. "Inglés completo" → "Zona íntima completa"
+
+**Research findings:**
+- "Inglés completo" is outdated slang in Paraguay
+- Clinics use: "Zona íntima completa", "Bikini completo", "Depilación integral"
+- Most common in LATAM: **"Zona íntima completa"** (cepilarte, Piel&Co)
+- For the pricing zone: `{ name: "Zona íntima completa", small: false, medium: true, ... }`
+
+**Files to change:**
+- `content/es.json` — zone name line 72, FAQ answer lines 100, 119
+- API route — no change needed (reads from content overrides)
+- Admin editor — no change needed (reads from content)
+
+### 1b. Sun exposure advice — CORRECT medical guideline
+
+**Research findings (BMLA, Laesera, StatPearls):**
+
+| Current text (WRONG) | Correct text |
+|---------------------|--------------|
+| "No te expongas al sol 48 horas antes" | "No te expongas la zona a tratar al sol DIRECTAMENTE los días previos a la sesión. Si estuviste al sol, esperá al menos 1-2 semanas antes de la sesión." |
+| Missing post-care | "Después de la sesión: no te expongas la zona tratada al sol por 48 horas. Usá protector solar SPF 50+ si vas a estar al aire libre." |
+
+**Files to change:**
+- `content/es.json` — step 2 description line 54, FAQ items line 99
+- `servicios/page.tsx` — prep section hardcoded text (line ~65-75)
+
+### 1c. Add relevant FAQ about solar exposure before/after
+
+Add a dedicated FAQ item that answers proactively.
+
+---
+
+## Batch 2: Electrolysis Research Integration
+
+**Research findings:**
+- **Electrolysis vs IPL**: electrolysis is slower (10-30 min per small area), more painful, more expensive (18-35€ per session), but works on ALL hair types (including blonde/white). IPL is faster, cheaper per session, less painful, but only works on dark hair.
+- **Market in Paraguay**: No major electrolysis providers found in Paraguay search. Main players are IPL/laser (DepilArte, Piel&Co, Espaçolaser, Dermalaser). **Electrolysis is niche** — mostly used for small areas (facial, eyebrows) and for clients with light/blonde hair that IPL can't treat.
+- **Recommendation**: Don't offer electrolysis as a service. Instead:
+  1. Mention in FAQ that IPL works on dark hair; for very light/blonde we can discuss alternatives
+  2. Position IPL as superior for most clients (larger areas, less pain, better value)
+
+**Files to change:**
+- No code changes needed — just note this for Dan's business strategy
+
+---
+
+## Batch 3: Color Scheme Overhaul
+
+### Current scheme
+- Primary: `#E8795B` (salmon/coral) — warm, somewhat feminine but neutral
+- Secondary: `#2DD4BF` (teal/teal) — gradient partner
+- Background: `#FFF1EE`, `#FFFBFA`, `#FDF2F8` (light pinks and peaches)
+
+### New scheme — "Rose Elegance"
+Based on Dan's requirements (pastel pink + feminine + elegant):
+
+| Usage | Current | New | Hex |
+|-------|---------|-----|-----|
+| Primary button/CTA | `#E8795B` | Rose | `#E8A0BF` |
+| Primary hover | `#d4684e` | Rose darker | `#D484A8` |
+| Secondary gradient partner | `#2DD4BF` | Lavender | `#C4A4D4` |
+| Hero/text accent | `#E8795B` | Dusty rose | `#D4A0A0` |
+| Light bg 1 | `#FFF1EE` | Pink ice | `#FFF0F5` |
+| Light bg 2 | `#FFFBFA` | Lavender mist | `#F8F0FF` |
+| Light bg 3 | `#FDF2F8` | Rose water | `#FFF0F0` |
+| Text headings | `#1A1A2E` | Charcoal | Keep `#1A1A2E` |
+| Button text | `#FFFFFF` | White | Keep `#FFFFFF` |
+
+### Files to change (color references):
+1. `tailwind.config.js` — add new colors
+2. `app/globals.css` — if custom CSS
+3. `app/page.tsx` — inline styles (gradients, backgrounds)
+4. `app/servicios/page.tsx` — inline styles
+5. `app/como-funciona/page.tsx` — inline styles
+6. `app/contacto/page.tsx` — inline styles
+7. `app/faq/page.tsx` — inline styles
+8. `components/header.tsx` — any custom colors
+9. `components/footer.tsx` — custom colors
+10. `components/whatsapp-float.tsx` — custom colors
+11. `components/mobile-cta.tsx` — custom colors
+12. `components/cta-banner.tsx` — custom colors
+
+### Key color replacement table
+```
+#E8795B → #E8A0BF  (primary rose)
+#d4684e → #D484A8  (primary hover)
+#2DD4BF → #C4A4D4  (secondary accent)
+#FFF1EE → #FFF0F5  (bg light pink)
+#FFFBFA → #F8F0FF  (bg lavender mist)
+#FDF2F8 → #FFF0F0  (bg rose water)
+```
+
+The hero gradient changes from:
+```
+linear-gradient(135deg, #FFF1EE 0%, #FDF2F8 50%, #ECFDF5 100%)
+→
+linear-gradient(135deg, #FFF0F5 0%, #FFF0F0 50%, #F8F0FF 100%)
+```
+
+The CTA banner changes from:
+```
+linear-gradient(135deg, #E8795B 0%, #2DD4BF 100%)
+→
+linear-gradient(135deg, #E8A0BF 0%, #C4A4D4 100%)
+```
+
+---
+
+## Execution Order
 
 ```
-Phase 1a ──→ Phase 1b ──→ Phase 1c ──→ Phase 3 ──→ Phase 2 ──→ Phase 4 ──→ Phase 5
-             (API)       (Provider)   (Pages)    (Editor)   (Limiting)
+Batch 1a (terminology) ──→ Batch 1b (sun advice) ──→ Batch 3 (colors)
 ```
 
-**Actually: Phase 2 (admin editor) comes before Phase 3 (page refactoring).**
-The page refactoring is only useful if the admin editor exists. Priority:
+Batch 2 (electrolysis research) is strategy-only, no code.
 
-1. Phase 1a — Seed all content to Supabase ✅ (partially — Instagram only)
-2. Phase 1b — API layer
-3. Phase 2 — Admin content editor
-4. Phase 3 — Refactor pages to use ContentProvider
-5. Phase 4 — Rate limiting & analytics
-6. Phase 5 — Deploy
+---
 
-## Errors to Watch
-
-| Risk | Mitigation |
-|------|------------|
-| Supabase service role key exposed client-side | Use server-only `/api/` routes |
-| ContentProvider flash of unmerged content | Show loading skeleton until merge complete |
-| Admin edit breaks JSON structure | Validate JSONB before writing |
-| Phone number formatting inconsistency | Single source: `content.whatsapp` everywhere |
-
-## Completion Criteria
-
-- [ ] All business data lives in Supabase `ej_site_config.content_overrides`
-- [ ] Admin editor at `/admin/content` can edit prices, FAQ, SEO, contacts
-- [ ] Every page reads from ContentProvider (not hardcoded JSON/strings)
-- [ ] No hardcoded phone, WhatsApp links, Instagram, or email in any component
-- [ ] Rate limiting on contact form
-- [ ] Deployed and verified live
+## Timing
+- Content/terminology changes: ~10 min (JSON edits only)
+- Sun exposure changes: ~20 min (content JSON + FAQ + component hardcoded text)
+- Color scheme: ~30 min (find-replace across ~12 files)
+- **Total: ~ 1 hour**

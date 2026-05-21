@@ -27,20 +27,20 @@ export default function Home() {
       <Header />
 
       {/* Hero */}
-      <section className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, #FFF1EE 0%, #FDF2F8 50%, #ECFDF5 100%)" }}>
+      <section className="relative overflow-hidden" style={{ background: "linear-gradient(135deg, #FFF0F5 0%, #FFF0F0 50%, #FFF0F0 100%)" }}>
         <div className="relative max-w-5xl mx-auto px-4 py-20 md:py-32 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/80 rounded-full px-4 py-1.5 text-sm text-[#E8795B] font-medium mb-6 shadow-sm border border-gray-100">
+          <div className="inline-flex items-center gap-2 bg-white/80 rounded-full px-4 py-1.5 text-sm text-[#E8A0BF] font-medium mb-6 shadow-sm border border-gray-100">
             <Zap className="w-4 h-4" /> Depilación láser IPL a domicilio
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-[#1A1A2E] mb-6 leading-tight">{h.hero.headline}</h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10">{h.hero.subheadline}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#d4684e] transition shadow-lg shadow-[#E8795B]/20">
+              className="inline-flex items-center gap-2 bg-[#E8A0BF] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#D484A8] transition shadow-lg shadow-[#E8A0BF]/20">
               <MessageCircle className="w-5 h-5" /> {h.hero.ctaPrimaryText}
             </a>
             <a href={h.hero.ctaSecondaryHref}
-              className="inline-flex items-center gap-2 border-2 border-[#E8795B] text-[#E8795B] px-8 py-4 rounded-xl font-semibold hover:bg-[#FFF1EE] transition">
+              className="inline-flex items-center gap-2 border-2 border-[#E8A0BF] text-[#E8A0BF] px-8 py-4 rounded-xl font-semibold hover:bg-[#FFF0F5] transition">
               {h.hero.ctaSecondaryText}
             </a>
           </div>
@@ -54,8 +54,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">{h.benefits.title}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {h.benefits.items.map((b: any, i: number) => (
-              <div key={i} className="text-center p-6 bg-[#FFFBFA] rounded-xl border border-[#FFF1EE]">
-                <div className="text-[#E8795B] mb-4 flex justify-center">{iconMap[b.icon]}</div>
+              <div key={i} className="text-center p-6 bg-[#F8F0FF] rounded-xl border border-[#FFF0F5]">
+                <div className="text-[#E8A0BF] mb-4 flex justify-center">{iconMap[b.icon]}</div>
                 <h3 className="font-bold text-[#1A1A2E] mb-2">{b.text}</h3>
                 <p className="text-sm text-gray-500">{b.description}</p>
               </div>
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="py-16 bg-[#FFFBFA]">
+      <section className="py-16 bg-[#F8F0FF]">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-2">{h.howItWorks.title}</h2>
           <p className="text-center text-gray-500 mb-12">{h.howItWorks.subtitle}</p>
@@ -73,7 +73,7 @@ export default function Home() {
             {h.howItWorks.steps.map((s: any, i: number) => (
               <div key={i} className="text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full text-xl font-bold text-white"
-                  style={{ background: i === 1 ? "linear-gradient(135deg, #E8795B, #2DD4BF)" : "#E8795B" }}>
+                  style={{ background: i === 1 ? "linear-gradient(135deg, #E8A0BF, #C4A4D4)" : "#E8A0BF" }}>
                   {s.number}
                 </div>
                 <h3 className="font-bold mb-2">{s.title}</h3>
@@ -81,12 +81,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="mt-10 bg-[#FFF1EE] rounded-xl p-6 border border-[#E8795B]/20">
+          <div className="mt-10 bg-[#FFF0F5] rounded-xl p-6 border border-[#E8A0BF]/20">
             <div className="flex items-start gap-3">
-              <Zap className="w-5 h-5 text-[#E8795B] shrink-0 mt-0.5" />
+              <Zap className="w-5 h-5 text-[#E8A0BF] shrink-0 mt-0.5" />
               <div>
                 <p className="font-bold text-sm">⚠️ Preparación obligatoria:</p>
-                <p className="text-sm text-gray-600 mt-1">Afeitá la zona <strong>24 horas antes</strong>. No uses cera, crema depilatoria ni pinzas. La piel debe estar limpia y sin cremas el día de la sesión.</p>
+                <p className="text-sm text-gray-600 mt-1">Afeitá la zona <strong>24 horas antes</strong>. No uses cera, crema depilatoria ni pinzas. La piel debe estar limpia y sin cremas el día de la sesión. Si estuviste al sol los días previos, esperá una semana. Después de la sesión, evitá el sol 48 horas y usá protector solar SPF 50+.</p>
               </div>
             </div>
           </div>
@@ -101,9 +101,9 @@ export default function Home() {
           <p className="text-center text-xs text-gray-400 mb-10">{h.pricing.note}</p>
           <div className="grid gap-3">
             {h.pricing.zones.map((z: any, i: number) => (
-              <div key={i} className="flex items-center justify-between p-4 bg-[#FFFBFA] rounded-xl border border-gray-100 hover:border-[#E8795B]/30 transition">
+              <div key={i} className="flex items-center justify-between p-4 bg-[#F8F0FF] rounded-xl border border-gray-100 hover:border-[#E8A0BF]/30 transition">
                 <div className="flex items-center gap-3">
-                  <div className={`w-2 h-2 rounded-full ${z.small ? 'bg-green-400' : z.medium ? 'bg-yellow-400' : 'bg-[#E8795B]'}`} />
+                  <div className={`w-2 h-2 rounded-full ${z.small ? 'bg-green-400' : z.medium ? 'bg-yellow-400' : 'bg-[#E8A0BF]'}`} />
                   <div>
                     <span className="font-medium">{z.name}</span>
                     <span className="text-xs text-gray-400 ml-2">~{z.time}</span>
@@ -118,7 +118,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-8">
             <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
+              className="inline-flex items-center gap-2 bg-[#E8A0BF] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#D484A8] transition">
               <MessageCircle className="w-5 h-5" /> Consultar paquetes
             </a>
           </div>
@@ -128,11 +128,11 @@ export default function Home() {
       {/* Conocé a Dan */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="mx-auto mb-6 w-24 h-24 rounded-full bg-gradient-to-br from-[#E8795B] to-[#2DD4BF] flex items-center justify-center text-white text-3xl font-bold shadow-lg">D</div>
+          <div className="mx-auto mb-6 w-24 h-24 rounded-full bg-gradient-to-br from-[#E8A0BF] to-[#C4A4D4] flex items-center justify-center text-white text-3xl font-bold shadow-lg">D</div>
           <h2 className="text-3xl font-bold mb-3">{h.dan.title}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">{h.dan.description}</p>
           <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
+            className="inline-flex items-center gap-2 bg-[#E8A0BF] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#D484A8] transition">
             <MessageCircle className="w-5 h-5" /> {h.hero.ctaPrimaryText}
           </a>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
             <p className="text-center text-gray-500 mb-10">{h.gallery.subtitle}</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {h.gallery.items.map((g: any, i: number) => (
-                <div key={i} className="bg-gradient-to-br from-[#FFF1EE] to-[#FDF2F8] rounded-xl p-8 text-center border border-[#E8795B]/10">
+                <div key={i} className="bg-gradient-to-br from-[#FFF0F5] to-[#FFF0F0] rounded-xl p-8 text-center border border-[#E8A0BF]/10">
                   <div className="text-4xl mb-3">{g.emoji}</div>
                   <h3 className="font-bold text-sm">{g.title}</h3>
                   <p className="text-xs text-gray-500 mt-1">{g.description}</p>
@@ -162,7 +162,7 @@ export default function Home() {
 
       {/* Testimonials */}
       {h.testimonials?.items?.length > 0 && (
-        <section className="py-16 bg-[#FFFBFA]">
+        <section className="py-16 bg-[#F8F0FF]">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-10">{h.testimonials.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -179,13 +179,13 @@ export default function Home() {
       )}
 
       {/* FAQ */}
-      <section className="py-16 bg-[#FFFBFA]">
+      <section className="py-16 bg-[#F8F0FF]">
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-10">{h.faq.title}</h2>
           <div className="space-y-3">
             {h.faq.items.map((item: any, i: number) => (
               <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
-                <summary className="flex justify-between items-center p-4 cursor-pointer font-medium hover:bg-[#FFF1EE]">
+                <summary className="flex justify-between items-center p-4 cursor-pointer font-medium hover:bg-[#FFF0F5]">
                   <span className="text-sm">{item.question}</span>
                   <ChevronRight className="w-4 h-4 group-open:rotate-90 transition shrink-0" />
                 </summary>
@@ -200,12 +200,12 @@ export default function Home() {
       {content.reafirmacion && (
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-br from-[#FFF1EE] to-[#FDF2F8] rounded-2xl p-8 border border-[#E8795B]/10">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-br from-[#FFF0F5] to-[#FFF0F0] rounded-2xl p-8 border border-[#E8A0BF]/10">
               <div className="text-left">
                 <h2 className="text-3xl font-bold mb-3">🏳️‍⚧️ {content.reafirmacion.title}</h2>
                 <p className="text-gray-600 max-w-xl mb-6">{content.reafirmacion.description}</p>
                 <a href={content.reafirmacion.ctaHref} target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
+                  className="inline-flex items-center gap-2 bg-[#E8A0BF] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#D484A8] transition">
                   <MessageCircle className="w-5 h-5" /> {content.reafirmacion.ctaLabel}
                 </a>
               </div>
@@ -215,12 +215,12 @@ export default function Home() {
       )}
 
       {/* CTA final */}
-      <section className="relative overflow-hidden py-16" style={{ background: "linear-gradient(135deg, #E8795B 0%, #2DD4BF 100%)" }}>
+      <section className="relative overflow-hidden py-16" style={{ background: "linear-gradient(135deg, #E8A0BF 0%, #C4A4D4 100%)" }}>
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">Probá tu primera sesión</h2>
           <p className="mb-8 text-lg text-white/90">Escribime por WhatsApp, decime qué zona querés tratarte y elegimos día y horario.</p>
           <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-[#E8795B] transition-all hover:scale-105">
+            className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-[#E8A0BF] transition-all hover:scale-105">
             <MessageCircle className="w-5 h-5" /> Escribime ahora
           </a>
         </div>

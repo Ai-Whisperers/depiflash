@@ -30,8 +30,8 @@ export default function ComoFuncionaPage() {
 
         <div className="space-y-6">
           {steps.map((step, i) => (
-            <div key={i} className="flex gap-4 p-5 bg-[#FFFBFA] rounded-xl border border-gray-100">
-              <div className="w-10 h-10 rounded-full bg-[#E8795B]/10 flex items-center justify-center text-[#E8795B] shrink-0">
+            <div key={i} className="flex gap-4 p-5 bg-[#F8F0FF] rounded-xl border border-gray-100">
+              <div className="w-10 h-10 rounded-full bg-[#E8A0BF]/10 flex items-center justify-center text-[#E8A0BF] shrink-0">
                 {step.icon}
               </div>
               <div>
