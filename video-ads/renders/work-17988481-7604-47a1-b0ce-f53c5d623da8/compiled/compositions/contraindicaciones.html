@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 25px; padding: 80px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #E8A0BF; font-weight: 700; }
+    .heading { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700; color: #1A1A2E; text-align: center; }
+    .card-warning {
+      background: #FFF0F5; border-radius: 24px; padding: 30px 40px; width: 700px;
+      display: flex; flex-direction: column; gap: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .warning-row { display: flex; align-items: center; gap: 15px; font-size: 24px; font-weight: 400; color: #1A1A2E; }
+    .warning-icon { font-size: 30px; }
+    .body-d { font-size: 26px; font-weight: 500; color: #E8A0BF; text-align: center; }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(232,160,191,0.15); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 26px; font-weight: 600; color: #E8A0BF;
+      border: 2px solid rgba(232,160,191,0.3);
+    }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-contraindicaciones" data-composition-id="depiflash-contraindicaciones" data-width="1080" data-height="1920">
+
+
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="12" style="background:#FFFFFF;">
+    <div class="logo">DepiFlash ⚡</div>
+
+    <div class="heading" id="s1-head" style="opacity:0;">¿Podés hacerte IPL?</div>
+    <div class="heading" style="font-size:28px; font-weight:400; color:#888; opacity:0;" id="s1-sub">Consultame si tenés dudas</div>
+
+    <div class="card-warning" id="s1-card1" style="opacity:0; transform:scaleY(0);">
+      <div class="warning-row">
+        <span class="warning-icon">🤰</span>
+        <span>No si estás embarazada o amamantando</span>
+      </div>
+    </div>
+    <div class="card-warning" id="s1-card2" style="opacity:0; transform:scaleY(0);">
+      <div class="warning-row">
+        <span class="warning-icon">☀️</span>
+        <span>Piel bronceada o quemada por el sol</span>
+      </div>
+    </div>
+    <div class="card-warning" id="s1-card3" style="opacity:0; transform:scaleY(0);">
+      <div class="warning-row">
+        <span class="warning-icon">💊</span>
+        <span>Medicamentos fotosensibles</span>
+      </div>
+    </div>
+    <div class="card-warning" id="s1-card4" style="opacity:0; transform:scaleY(0);">
+      <div class="warning-row">
+        <span class="warning-icon">🩹</span>
+        <span>Heridas o infecciones en la zona</span>
+      </div>
+    </div>
+
+    <div class="body-d" id="s1-cta" style="opacity:0;">Si no estás segura, consultame 📲</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-contraindicaciones"] = tl;
+
+  tl.from("#s1-head", { y: -20, opacity: 0, duration: 0.4, ease: "power2.out" }, 0.3);
+  tl.from("#s1-sub", { y: 10, opacity: 0, duration: 0.3, ease: "power2.out" }, 0.8);
+  tl.to("#s1-card1", { scaleY: 1, opacity: 1, duration: 0.35, ease: "back.out(1.7)" }, 1.5);
+  tl.to("#s1-card2", { scaleY: 1, opacity: 1, duration: 0.35, ease: "back.out(1.7)" }, 2.3);
+  tl.to("#s1-card3", { scaleY: 1, opacity: 1, duration: 0.35, ease: "back.out(1.7)" }, 3.1);
+  tl.to("#s1-card4", { scaleY: 1, opacity: 1, duration: 0.35, ease: "back.out(1.7)" }, 3.9);
+  tl.from("#s1-cta", { y: 15, opacity: 0, duration: 0.4, ease: "power2.out" }, 6.0);
+})();
+</script>
+</body>
+</html>

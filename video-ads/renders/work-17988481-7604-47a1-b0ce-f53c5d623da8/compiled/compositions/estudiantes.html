@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 25px; padding: 80px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #E8A0BF; font-weight: 700; }
+    .logo.w { color: #fff; }
+    .emoji-big { font-size: 70px; }
+    .heading { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: #1A1A2E; text-align: center; }
+    .heading.w { color: #fff; }
+    .sub-text { font-size: 24px; font-weight: 400; color: #666; text-align: center; }
+    .sub-text.w { color: rgba(255,255,255,0.85); }
+    .badge-offer {
+      background: #FFF0F5; border-radius: 24px; padding: 30px 60px; font-size: 48px; font-weight: 700; color: #E8A0BF;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-estudiantes" data-composition-id="depiflash-estudiantes" data-width="1080" data-height="1920">
+
+
+  <!-- Scene 1: Student offer -->
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="4" style="background:#FFFFFF;">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="emoji-big" id="s1-emoji" style="opacity:0;">🎓</div>
+    <div class="heading" id="s1-head" style="opacity:0;">15% OFF</div>
+    <div class="sub-text" id="s1-sub" style="opacity:0;">Presentando tu carnet de estudiante</div>
+  </div>
+
+  <!-- Scene 2: Universities -->
+  <div class="clip scene-content" data-track-index="2" data-start="4" data-duration="4" style="background:linear-gradient(135deg,#E8A0BF,#C4A4D4);">
+    <div class="logo w">DepiFlash ⚡</div>
+    <div class="heading w" id="s2-head" style="opacity:0;">Para estudiantes de</div>
+    <div class="sub-text w" id="s2-list" style="opacity:0; font-size:28px; font-weight:500;">UNA · UniNorte · Americana<br>y todas las universidades 📚✨</div>
+    <div class="cta-badge" id="s2-cta" style="opacity:0;">📲 Consultá por tu descuento</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-estudiantes"] = tl;
+
+  tl.from("#s1-emoji", { y: -40, opacity: 0, duration: 0.4, ease: "power2.out" }, 0.3);
+  tl.from("#s1-head", { scale: 0.5, opacity: 0, duration: 0.5, ease: "back.out(2)" }, 0.8);
+  tl.from("#s1-sub", { y: 20, opacity: 0, duration: 0.4, ease: "power2.out" }, 1.5);
+  tl.to(["#s1-emoji", "#s1-head", "#s1-sub"], { opacity: 0, duration: 0.3 }, 3.6);
+
+  tl.from("#s2-head", { y: -20, opacity: 0, duration: 0.4, ease: "power2.out" }, 4.3);
+  tl.from("#s2-list", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 4.9);
+  tl.to("#s2-cta", { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1,0.4)" }, 6.0);
+})();
+</script>
+</body>
+</html>

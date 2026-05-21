@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 25px; padding: 80px;
+    }
+    .logo {
+      position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #1A1A2E; font-weight: 700;
+    }
+    .logo.white { color: #fff; }
+    .emoji-big { font-size: 80px; line-height: 1; }
+    .heading-dark { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: #1A1A2E; text-align: center; }
+    .sub-dark { font-size: 24px; font-weight: 400; color: #666; text-align: center; }
+    .heading-white { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 700; color: #fff; text-align: center; }
+    .sub-white { font-size: 20px; font-weight: 400; color: rgba(255,255,255,0.85); text-align: center; }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .location-list { font-size: 20px; font-weight: 400; color: rgba(255,255,255,0.9); text-align: center; line-height: 1.6; }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-domicilio" data-composition-id="depiflash-domicilio" data-width="1080" data-height="1920">
+
+
+  <!-- Scene 1: 🏠 Casa -->
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="4" style="background:#FFF0F5;">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="emoji-big" id="s1-emoji" style="opacity:0;">🏠</div>
+    <div class="heading-dark" id="s1-heading" style="opacity:0;">Sin moverte de tu casa</div>
+    <div class="sub-dark" id="s1-sub" style="opacity:0;">Depilación IPL a domicilio</div>
+  </div>
+
+  <!-- Scene 2: Cobertura -->
+  <div class="clip scene-content" data-track-index="2" data-start="4" data-duration="4" style="background:linear-gradient(135deg,#E8A0BF,#C4A4D4);">
+    <div class="logo white">DepiFlash ⚡</div>
+    <div class="emoji-big" id="s2-emoji" style="opacity:0;">📍</div>
+    <div class="heading-white" id="s2-heading" style="opacity:0;">Asunción y Gran Asunción</div>
+    <div class="location-list" id="s2-locations" style="opacity:0;">Fernando de la Mora · San Lorenzo · Luque<br>Lambaré · Mariano Roque Alonso · Ñemby</div>
+    <div class="cta-badge" id="s2-cta" style="opacity:0;">📲 Escribime ahora</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-domicilio"] = tl;
+
+  // Scene 1: 🏠 -> Casa
+  tl.to("#s1-emoji", { y: 0, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }, 0.3);
+  tl.from("#s1-heading", { y: 30, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.9);
+  tl.from("#s1-sub", { y: 20, opacity: 0, duration: 0.4, ease: "power2.out" }, 1.5);
+  tl.to(["#s1-emoji", "#s1-heading", "#s1-sub"], { opacity: 0, duration: 0.3 }, 3.6);
+
+  // Scene 2: 📍 -> Cobertura
+  tl.to("#s2-emoji", { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1, 0.3)" }, 4.3);
+  tl.from("#s2-heading", { y: -30, opacity: 0, duration: 0.5, ease: "power2.out" }, 4.8);
+  tl.from("#s2-locations", { y: 20, opacity: 0, duration: 0.6, ease: "power2.out" }, 5.4);
+  tl.to("#s2-cta", { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1, 0.4)" }, 6.5);
+  tl.to("#s2-cta", { scale: 1.06, duration: 0.6, ease: "sine.inOut", repeat: 1, yoyo: true }, 7.3);
+})();
+</script>
+</body>
+</html>

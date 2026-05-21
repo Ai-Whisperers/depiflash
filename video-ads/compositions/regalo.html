@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 25px; padding: 80px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #fff; font-weight: 700; }
+    .emoji-big { font-size: 80px; }
+    .heading-w { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: #fff; text-align: center; }
+    .body-w { font-size: 28px; font-weight: 400; color: #fff; text-align: center; }
+    .gift-box {
+      position: relative; width: 200px; height: 200px; background: #E8A0BF;
+      border-radius: 24px; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 10px 30px rgba(232,160,191,0.4);
+    }
+    .gift-box::before { content: '🎁'; font-size: 80px; }
+    .gift-ribbon {
+      position: absolute; width: 200px; height: 12px; background: #C4A4D4; top: 50%; transform: translateY(-50%);
+      border-radius: 6px;
+    }
+    .gift-ribbon-v {
+      position: absolute; width: 12px; height: 200px; background: #C4A4D4; left: 50%; transform: translateX(-50%);
+      border-radius: 6px;
+    }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-regalo" data-composition-id="depiflash-regalo" data-width="1080" data-height="1920">
+
+
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="7" style="background:linear-gradient(135deg,#E8A0BF,#C4A4D4);">
+    <div class="logo">DepiFlash ⚡</div>
+
+    <div class="gift-box" id="s1-gift" style="opacity:0;">
+      <div class="gift-ribbon"></div>
+      <div class="gift-ribbon-v"></div>
+    </div>
+
+    <div class="heading-w" id="s1-head" style="opacity:0;">Regalá confianza 🎁</div>
+    <div class="body-w" id="s1-text" style="opacity:0;">Gift cards de DepiFlash</div>
+    <div class="body-w" style="font-size:22px; opacity:0;" id="s1-sub">Sesiones de IPL para regalar a quien quieras</div>
+
+    <div class="cta-badge" id="s1-cta" style="opacity:0;">📲 Consultá por gift cards</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-regalo"] = tl;
+
+  tl.to("#s1-gift", { scale: 1, opacity: 1, rotation: 0, duration: 0.7, ease: "elastic.out(1,0.3)" }, 0.3);
+  tl.to("#s1-gift", { y: -10, duration: 0.8, repeat: 1, yoyo: true, ease: "sine.inOut" }, 2.0);
+  tl.from("#s1-head", { y: -20, opacity: 0, duration: 0.4, ease: "power2.out" }, 1.2);
+  tl.from("#s1-text", { y: 15, opacity: 0, duration: 0.35, ease: "power2.out" }, 1.8);
+  tl.from("#s1-sub", { y: 15, opacity: 0, duration: 0.35, ease: "power2.out" }, 2.5);
+  tl.to("#s1-cta", { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1,0.4)" }, 4.0);
+  tl.to("#s1-cta", { scale: 1.06, duration: 0.6, repeat: 1, yoyo: true, ease: "sine.inOut" }, 5.5);
+})();
+</script>
+</body>
+</html>

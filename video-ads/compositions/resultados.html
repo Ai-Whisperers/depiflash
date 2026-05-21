@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 25px; padding: 80px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #E8A0BF; font-weight: 700; }
+    .testimonial-card {
+      background: #FFF0F5; border-radius: 24px; padding: 50px; width: 800px;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .quote-mark { font-size: 60px; color: #E8A0BF; line-height: 0.5; }
+    .testimonial-text { font-size: 30px; font-weight: 400; color: #1A1A2E; text-align: center; font-style: italic; line-height: 1.4; }
+    .testimonial-author { font-size: 22px; font-weight: 600; color: #E8A0BF; }
+    .body-d { font-size: 28px; font-weight: 500; color: #1A1A2E; text-align: center; }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(232,160,191,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #E8A0BF;
+      border: 2px solid rgba(232,160,191,0.3);
+    }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-resultados" data-composition-id="depiflash-resultados" data-width="1080" data-height="1920">
+
+
+  <!-- Scene 1: 3 sesiones -->
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="4" style="background:#FFF0F5;">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="body-d" style="font-size:48px; font-family:'Playfair Display',serif; font-weight:700;" id="s1-head">Resultados visibles</div>
+    <div class="body-d" style="font-size:40px;" id="s1-text">Desde la primera sesión ✨</div>
+  </div>
+
+  <!-- Scene 2: Testimonio Laura -->
+  <div class="clip scene-content" data-track-index="2" data-start="4" data-duration="5" style="background:#FFF0F5;">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="testimonial-card" id="s2-card" style="opacity:0;">
+      <div class="quote-mark">"</div>
+      <div class="testimonial-text">Súper recomendado. En 3 sesiones ya noté la diferencia.</div>
+      <div class="testimonial-author">— Laura</div>
+    </div>
+    <div class="cta-badge" id="s2-cta" style="opacity:0;">📲 Resultados reales, consultame</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-resultados"] = tl;
+
+  // Scene 1
+  tl.from("#s1-head", { y: -30, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.3);
+  tl.from("#s1-text", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.9);
+  tl.to(["#s1-head", "#s1-text"], { opacity: 0, duration: 0.3 }, 3.6);
+
+  // Scene 2
+  tl.to("#s2-card", { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }, 4.4);
+  tl.from("#s2-cta", { y: 20, opacity: 0, duration: 0.4, ease: "power2.out" }, 7.0);
+})();
+</script>
+</body>
+</html>

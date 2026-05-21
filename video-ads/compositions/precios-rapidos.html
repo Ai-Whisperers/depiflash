@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 30px; padding: 60px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #E8A0BF; font-weight: 700; }
+    .card {
+      background: #FFF0F5; border-radius: 24px; padding: 30px 50px; width: 700px;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .card-zone { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: #1A1A2E; }
+    .card-price { font-size: 40px; font-weight: 700; color: #E8A0BF; }
+    .card-duration { font-size: 18px; font-weight: 400; color: #888; }
+    .body-w { font-size: 28px; font-weight: 500; color: #fff; text-align: center; }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .circle-deco { position: absolute; border-radius: 50%; opacity: 0.12; }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-precios-rapidos" data-composition-id="depiflash-precios-rapidos" data-width="1080" data-height="1920">
+
+
+  <!-- Scene 1: Precios Cards -->
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="8" style="background:linear-gradient(135deg,#1A1A2E,#2A2A4E);">
+    <div class="logo" style="color:#fff;">DepiFlash ⚡</div>
+    <div class="heading-d" style="font-family:'Playfair Display',serif; font-size:44px; font-weight:700; color:#E8A0BF; text-align:center; opacity:0;" id="s1-title">Precios por sesión</div>
+    <div class="card" id="card-1" style="opacity:0; transform:scaleY(0);">
+      <div class="card-zone">Axilas</div>
+      <div class="card-price">Gs. 70.000</div>
+      <div class="card-duration">~15 min</div>
+    </div>
+    <div class="card" id="card-2" style="opacity:0; transform:scaleY(0);">
+      <div class="card-zone">Bikini</div>
+      <div class="card-price">Gs. 80.000</div>
+      <div class="card-duration">~15 min</div>
+    </div>
+    <div class="card" id="card-3" style="opacity:0; transform:scaleY(0);">
+      <div class="card-zone">Piernas completas</div>
+      <div class="card-price">Gs. 180.000</div>
+      <div class="card-duration">~45 min</div>
+    </div>
+    <div class="body-w" id="s1-cta" style="opacity:0;">Consultame tu zona por WhatsApp 📲</div>
+    <div class="circle-deco" style="width:300px; height:300px; background:#E8A0BF; top:-50px; right:-100px;"></div>
+    <div class="circle-deco" style="width:180px; height:180px; background:#C4A4D4; bottom:200px; left:-60px;"></div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-precios-rapidos"] = tl;
+
+  tl.from("#s1-title", { y: -20, opacity: 0, duration: 0.4, ease: "power2.out" }, 0.3);
+  tl.to("#card-1", { scaleY: 1, opacity: 1, duration: 0.4, ease: "back.out(1.7)" }, 1.0);
+  tl.to("#card-2", { scaleY: 1, opacity: 1, duration: 0.4, ease: "back.out(1.7)" }, 1.6);
+  tl.to("#card-3", { scaleY: 1, opacity: 1, duration: 0.4, ease: "back.out(1.7)" }, 2.2);
+  tl.to("#card-1", { y: -5, duration: 0.8, repeat: 2, yoyo: true, ease: "sine.inOut" }, 2.8);
+  tl.to("#card-2", { y: -5, duration: 0.8, repeat: 2, yoyo: true, ease: "sine.inOut" }, 2.9);
+  tl.to("#card-3", { y: -5, duration: 0.8, repeat: 2, yoyo: true, ease: "sine.inOut" }, 3.0);
+  tl.from("#s1-cta", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 5.5);
+  tl.to("#s1-cta", { scale: 1.05, duration: 0.6, repeat: 1, yoyo: true }, 6.5);
+})();
+</script>
+</body>
+</html>

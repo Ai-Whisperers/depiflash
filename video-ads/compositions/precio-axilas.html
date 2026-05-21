@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 20px; padding: 80px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #E8A0BF; font-weight: 700; }
+    .zone-text { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 700; color: #E8A0BF; }
+    .price-big { font-size: 72px; font-weight: 700; color: #fff; line-height: 1; }
+    .price-tag { font-size: 18px; font-weight: 400; color: rgba(255,255,255,0.6); text-align: center; }
+    .check-text { font-size: 20px; font-weight: 500; color: #4CAF50; }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.2);
+    }
+    .circle-deco { position: absolute; border-radius: 50%; opacity: 0.1; }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-precio-axilas" data-composition-id="depiflash-precio-axilas" data-width="1080" data-height="1920">
+
+
+  <!-- Scene 1: Axilas Gs.70.000 -->
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="4" style="background:linear-gradient(135deg,#1A1A2E,#2A2A4E);">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="zone-text" id="s1-zone" style="opacity:0;">Axilas</div>
+    <div class="price-big" id="s1-price" style="opacity:0;">Gs. 70.000</div>
+    <div class="price-tag" id="s1-tag" style="opacity:0;">/ por sesión</div>
+    <div class="circle-deco" style="width:400px; height:400px; background:#E8A0BF; top:-100px; right:-120px;"></div>
+    <div class="circle-deco" style="width:200px; height:200px; background:#C4A4D4; bottom:300px; left:-80px;"></div>
+  </div>
+
+  <!-- Scene 2: CTA -->
+  <div class="clip scene-content" data-track-index="2" data-start="4" data-duration="2" style="background:linear-gradient(135deg,#1A1A2E,#2A2A4E);">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="zone-text" style="font-size:40px;">Axilas</div>
+    <div class="price-big" style="font-size:56px;">Gs. 70.000</div>
+    <div class="check-text" id="s2-check" style="opacity:0;">✓ Incluye desplazamiento</div>
+    <div class="cta-badge" id="s2-cta" style="opacity:0;">📲 Reservá tu sesión</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-precio-axilas"] = tl;
+
+  // Scene 1
+  tl.to("#s1-zone", { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }, 0.3);
+  tl.to("#s1-price", { y: 0, opacity: 1, duration: 0.6, ease: "bounce.out" }, 0.9);
+  tl.from("#s1-tag", { opacity: 0, duration: 0.3, ease: "power2.out" }, 1.6);
+  tl.to(["#s1-zone", "#s1-price", "#s1-tag"], { opacity: 0, duration: 0.3 }, 3.6);
+
+  // Scene 2
+  tl.from("#s2-check", { y: 10, opacity: 0, duration: 0.3, ease: "power2.out" }, 4.3);
+  tl.to("#s2-cta", { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1, 0.4)" }, 4.8);
+})();
+</script>
+</body>
+</html>

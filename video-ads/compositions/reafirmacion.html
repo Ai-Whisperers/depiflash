@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 25px; padding: 80px;
+    }
+    .logo { position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: #fff; font-weight: 700; }
+    .flag-container { position: relative; display: flex; gap: 0; margin-bottom: 20px; }
+    .flag-stripe { width: 80px; height: 60px; border-radius: 4px; }
+    .heading-w { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 700; color: #fff; text-align: center; line-height: 1.2; }
+    .body-w { font-size: 26px; font-weight: 500; color: #fff; text-align: center; }
+    .badge-big {
+      background: rgba(255,255,255,0.15); backdrop-filter: blur(10px);
+      padding: 25px 50px; border-radius: 24px; font-size: 36px; font-weight: 700; color: #fff;
+      border: 2px solid rgba(255,255,255,0.2);
+    }
+    .badge-green {
+      background: #4CAF50; padding: 15px 40px; border-radius: 50px; font-size: 24px; font-weight: 600; color: #fff;
+    }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-reafirmacion" data-composition-id="depiflash-reafirmacion" data-width="1080" data-height="1920">
+
+
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="10" style="background:linear-gradient(135deg,#1A1A2E,#2A2A4E);">
+    <div class="logo">DepiFlash ⚡</div>
+
+    <div class="flag-container" id="s1-flag" style="opacity:0;">
+      <div class="flag-stripe" style="background:#5BCEFA;"></div>
+      <div class="flag-stripe" style="background:#F5A9B8;"></div>
+      <div class="flag-stripe" style="background:#FFFFFF;"></div>
+      <div class="flag-stripe" style="background:#F5A9B8;"></div>
+      <div class="flag-stripe" style="background:#5BCEFA;"></div>
+    </div>
+
+    <div class="heading-w" id="s1-head" style="opacity:0;">Programa de<br>Reafirmación de Género 🏳️‍⚧️</div>
+
+    <div class="badge-big" id="s1-offer" style="opacity:0;">20% OFF</div>
+    <div class="body-w" id="s1-text" style="opacity:0;">Depilación facial con descuento especial</div>
+    <div class="badge-green" id="s1-free" style="opacity:0;">✨ Primera sesión gratis (primeras 10 personas)</div>
+
+    <div class="cta-badge" id="s1-cta" style="opacity:0;">📲 Consultame sin compromiso</div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-reafirmacion"] = tl;
+
+  tl.from("#s1-flag", { y: -30, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.3);
+  tl.from("#s1-head", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.9);
+  tl.to("#s1-offer", { scale: 1, opacity: 1, duration: 0.6, ease: "elastic.out(1,0.3)" }, 1.8);
+  tl.from("#s1-text", { y: 15, opacity: 0, duration: 0.4, ease: "power2.out" }, 2.8);
+  tl.to("#s1-free", { scale: 1, opacity: 1, duration: 0.5, ease: "bounce.out" }, 3.8);
+  tl.to("#s1-cta", { scale: 1, opacity: 1, duration: 0.5, ease: "elastic.out(1,0.4)" }, 6.0);
+  tl.to("#s1-cta", { scale: 1.06, duration: 0.6, repeat: 1, yoyo: true, ease: "sine.inOut" }, 7.5);
+})();
+</script>
+</body>
+</html>

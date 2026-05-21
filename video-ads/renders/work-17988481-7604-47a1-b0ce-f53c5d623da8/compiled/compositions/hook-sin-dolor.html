@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, .scene-content { width: 1080px; height: 1920px; overflow: hidden; font-family: 'Inter', sans-serif; }
+    .scene-content {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; gap: 30px; padding: 80px;
+    }
+    .logo {
+      position: absolute; top: 60px; left: 60px; font-family: 'Playfair Display', serif; font-size: 28px; color: white; font-weight: 700;
+    }
+    .hook-text { font-family: 'Playfair Display', serif; font-size: 96px; font-weight: 700; color: #fff; text-align: center; line-height: 1.1; }
+    .hook-text.dark { color: #E8A0BF; }
+    .x-overlay { position: absolute; font-size: 200px; color: #ff4444; font-weight: 900; opacity: 0; }
+    .no-text { font-family: 'Playfair Display', serif; font-size: 80px; font-weight: 700; color: #4CAF50; }
+    .body-text { font-size: 36px; font-weight: 500; color: #fff; text-align: center; }
+    .body-text.small { font-size: 24px; font-weight: 400; }
+    .cta-badge {
+      position: absolute; bottom: 200px; background: rgba(255,255,255,0.2); backdrop-filter: blur(10px);
+      padding: 20px 50px; border-radius: 50px; font-size: 28px; font-weight: 600; color: #fff;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .circle-deco {
+      position: absolute; border-radius: 50%; opacity: 0.15;
+    }
+  </style>
+</head>
+<body>
+<div data-composition="depiflash-hook-sin-dolor" data-composition-id="depiflash-hook-sin-dolor" data-width="1080" data-height="1920">
+
+
+  <!-- Scene 1: ¿DUELE? -->
+  <div class="clip scene-content" data-track-index="1" data-start="0" data-duration="2.5" style="background:#1A1A2E;">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="hook-text" id="s1-hook">¿DUELE?</div>
+  </div>
+
+  <!-- Scene 2: NO -->
+  <div class="clip scene-content" data-track-index="2" data-start="2.5" data-duration="3" style="background:#1A1A2E;">
+    <div class="logo" style="opacity:0;">DepiFlash ⚡</div>
+    <div class="hook-text" id="s2-hook" style="opacity:0; position:relative;">¿DUELE?</div>
+    <div class="x-overlay" id="s2-x">✕</div>
+    <div class="no-text" id="s2-no" style="opacity:0;">NO.</div>
+  </div>
+
+  <!-- Scene 3: Solución -->
+  <div class="clip scene-content" data-track-index="3" data-start="5.5" data-duration="3.5" style="background:linear-gradient(135deg,#E8A0BF,#C4A4D4);">
+    <div class="logo">DepiFlash ⚡</div>
+    <div class="body-text" id="s3-body" style="opacity:0;">Sensación de calor nomás 😊</div>
+    <div class="body-text small" id="s3-sub" style="opacity:0;">IPL profesional, sin dolor.<br>En tu casa.</div>
+    <div class="cta-badge" id="s3-cta" style="opacity:0;">📲 Escribime al WhatsApp</div>
+    <div class="circle-deco" style="width:300px; height:300px; background:#C4A4D4; top:-80px; right:-100px;"></div>
+    <div class="circle-deco" style="width:200px; height:200px; background:#E8A0BF; bottom:100px; left:-50px;"></div>
+  </div>
+
+
+<script>
+window.__timelines = window.__timelines || {};
+(function() {
+  var tl = gsap.timeline({ paused: true });
+  window.__timelines["depiflash-hook-sin-dolor"] = tl;
+
+  // Scene 1: ¿DUELE?
+  tl.from("#s1-hook", { scale: 0.8, opacity: 0, duration: 0.6, ease: "power2.out" }, 0);
+  tl.to("#s1-hook", { opacity: 0, duration: 0.2, ease: "power1.in" }, 2.3);
+
+  // Scene 2: X + NO
+  tl.set("#s2-hook", { opacity: 1 }, 2.5);
+  tl.to("#s2-x", { opacity: 1, scale: 1, rotation: 0, duration: 0.3, ease: "back.out(2)" }, 2.7);
+  tl.to("#s2-x", { rotation: 15, duration: 0.15, ease: "power1.inOut" }, 3.0);
+  tl.to("#s2-x", { rotation: -10, duration: 0.1, ease: "power1.inOut" }, 3.15);
+  tl.to("#s2-x", { rotation: 0, duration: 0.1, ease: "power1.inOut" }, 3.25);
+  tl.from("#s2-no", { scale: 0.5, opacity: 0, duration: 0.5, ease: "back.out(2)" }, 3.5);
+  tl.to("#s2-hook", { opacity: 0.3, duration: 0.3 }, 3.5);
+  tl.to(["#s2-hook", "#s2-x", "#s2-no"], { opacity: 0, duration: 0.2, ease: "power1.in" }, 5.2);
+
+  // Scene 3: Solución
+  tl.from("#s3-body", { y: 30, opacity: 0, duration: 0.6, ease: "power2.out" }, 5.7);
+  tl.from("#s3-sub", { y: 20, opacity: 0, duration: 0.5, ease: "power2.out" }, 6.1);
+  tl.to("#s3-cta", { scale: 1, opacity: 1, duration: 0.6, ease: "elastic.out(1, 0.4)" }, 7.0);
+  tl.to("#s3-cta", { scale: 1.05, duration: 0.8, ease: "sine.inOut", repeat: 1, yoyo: true }, 7.8);
+})();
+</script>
+</body>
+</html>
