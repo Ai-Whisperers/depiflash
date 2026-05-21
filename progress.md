@@ -24,6 +24,11 @@
 - ContentProvider wraps root layout
 - Footer still uses raw import (server component, no provider needed)
 
-**Next:** Phase 4 — Rate limiting
+**Phase 4 ✅ — Rate limiting**
+- lib/rate-limit.ts: 100 req/min per IP, in-memory token bucket
+- middleware.ts: applies to /api/admin/* routes
+- 429 response with Retry-After header
+
+**Next:** Phase 5 — Deploy to production
 
 
