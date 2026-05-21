@@ -2,9 +2,7 @@ FROM node:20-alpine AS deps
 WORKDIR /app
 RUN apk add --no-cache libc6-compat
 COPY package.json package-lock.json* ./
-ARG NODE_AUTH_TOKEN
-ENV NODE_AUTH_TOKEN=$NODE_AUTH_TOKEN
-RUN echo "@ai-whisperers:registry=https://npm.pkg.github.com" > .npmrc &&     echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> .npmrc &&     echo "//npm.pkg.github.com/:always-auth=true" >> .npmrc &&     npm install --legacy-peer-deps
+RUN npm install --legacy-peer-deps
 
 FROM node:20-alpine AS builder
 WORKDIR /app
