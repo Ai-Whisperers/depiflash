@@ -4,11 +4,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
-import raw from "@/content/es.json"
-import { House, Zap, Clock, Shield, MessageCircle, Sparkles, Truck, ChevronRight, Star, Check } from "lucide-react"
-
-const content = raw as any
-const h = content.home
+import { useContent } from "@/lib/content-provider"
+import { House, Zap, Clock, Shield, MessageCircle, Sparkles, Truck, ChevronRight, Star } from "lucide-react"
 
 const iconMap: Record<string, React.ReactNode> = {
   Home: <House className="w-8 h-8" />,
@@ -22,6 +19,9 @@ const iconMap: Record<string, React.ReactNode> = {
 }
 
 export default function Home() {
+  const { content } = useContent()
+  const h = content.home
+
   return (
     <>
       <Header />
@@ -117,8 +117,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <a href="https://wa.me/595974202025?text=Hola!%20Quiero%20consultar%20por%20paquetes%20de%20sesiones"
-              target="_blank" rel="noopener noreferrer"
+            <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
               <MessageCircle className="w-5 h-5" /> Consultar paquetes
             </a>
@@ -198,16 +197,16 @@ export default function Home() {
       </section>
 
       {/* Programa de Reafirmación */}
-      {raw.reafirmacion && (
+      {content.reafirmacion && (
         <section className="py-16">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div className="inline-flex items-center gap-2 bg-gradient-to-br from-[#FFF1EE] to-[#FDF2F8] rounded-2xl p-8 border border-[#E8795B]/10">
               <div className="text-left">
-                <h2 className="text-3xl font-bold mb-3">🏳️‍⚧️ {raw.reafirmacion.title}</h2>
-                <p className="text-gray-600 max-w-xl mb-6">{raw.reafirmacion.description}</p>
-                <a href={raw.reafirmacion.ctaHref} target="_blank" rel="noopener noreferrer"
+                <h2 className="text-3xl font-bold mb-3">🏳️‍⚧️ {content.reafirmacion.title}</h2>
+                <p className="text-gray-600 max-w-xl mb-6">{content.reafirmacion.description}</p>
+                <a href={content.reafirmacion.ctaHref} target="_blank" rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[#E8795B] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#d4684e] transition">
-                  <MessageCircle className="w-5 h-5" /> {raw.reafirmacion.ctaLabel}
+                  <MessageCircle className="w-5 h-5" /> {content.reafirmacion.ctaLabel}
                 </a>
               </div>
             </div>
@@ -220,8 +219,7 @@ export default function Home() {
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">Probá tu primera sesión</h2>
           <p className="mb-8 text-lg text-white/90">Escribime por WhatsApp, decime qué zona querés tratarte y elegimos día y horario.</p>
-          <a href="https://wa.me/595974202025?text=Hola!%20Quiero%20reservar%20mi%20primera%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL"
-            target="_blank" rel="noopener noreferrer"
+          <a href={h.hero.ctaPrimaryHref} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-[#E8795B] transition-all hover:scale-105">
             <MessageCircle className="w-5 h-5" /> Escribime ahora
           </a>

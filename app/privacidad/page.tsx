@@ -3,11 +3,10 @@ import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import PageMeta from "@/components/page-meta"
-import raw from "@/content/es.json"
-
-const content = raw as any
+import { useContent } from "@/lib/content-provider"
 
 export default function PrivacidadPage() {
+  const { content } = useContent()
   return (
     <>
       <PageMeta title={content.privacidad.seo.title} description={content.privacidad.seo.description} />

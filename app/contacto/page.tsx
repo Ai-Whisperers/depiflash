@@ -3,12 +3,11 @@ import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import PageMeta from "@/components/page-meta"
-import raw from "@/content/es.json"
+import { useContent } from "@/lib/content-provider"
 import { Instagram, MessageCircle, Mail, MapPin } from "lucide-react"
 
-const content = raw as any
-
 export default function ContactoPage() {
+  const { content } = useContent()
   return (
     <>
       <PageMeta title={content.contacto.seo.title} description={content.contacto.seo.description} />

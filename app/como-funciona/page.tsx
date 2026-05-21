@@ -6,13 +6,12 @@ import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import PageMeta from "@/components/page-meta"
-import raw from "@/content/es.json"
+import { useContent } from "@/lib/content-provider"
 import { MessageCircle, Zap, Clock, CheckCircle, Sparkles } from "lucide-react"
 
-const content = raw as any
-const h = content.home
-
 export default function ComoFuncionaPage() {
+  const { content } = useContent()
+  const h = content.home
   const steps = [
     { icon: <MessageCircle className="w-6 h-6" />, title: "1. Reservá", desc: h.howItWorks.steps[0].description },
     { icon: <Zap className="w-6 h-6" />, title: "2. Preparación (24h antes)", desc: "Afeitá la zona 24 horas antes. Piel limpia, sin cremas. NO uses cera ni crema depilatoria." },

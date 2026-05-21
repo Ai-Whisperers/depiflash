@@ -6,14 +6,13 @@ import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import PageMeta from "@/components/page-meta"
-import raw from "@/content/es.json"
+import { useContent } from "@/lib/content-provider"
 import { ChevronRight } from "lucide-react"
 
-const content = raw as any
-const faqItems = content.faq.items
-const page = content.faq
-
 export default function FaqPage() {
+  const { content } = useContent()
+  const faqItems = content.faq.items
+  const page = content.faq
   return (
     <>
       <PageMeta title={page.seo?.title || "FAQ | DepiFlash"} description={page.seo?.description || "Preguntas frecuentes sobre depilación láser IPL a domicilio en Asunción."} />
