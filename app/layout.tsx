@@ -1,8 +1,6 @@
 import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import raw from "@/content/es.json"
 
 const content = raw as any
@@ -63,8 +61,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased">
         {children}
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   )

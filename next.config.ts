@@ -3,6 +3,20 @@ import type { NextConfig } from "next"
 const config: NextConfig = {
   output: "standalone",
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: "/reservar",
+        destination: "https://wa.me/595972780800?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL",
+        permanent: true,
+      },
+      {
+        source: "/admin",
+        destination: "https://wa.me/595972780800",
+        permanent: true,
+      },
+    ]
+  },
   async headers() {
     return [
       {
