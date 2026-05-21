@@ -5,25 +5,23 @@ import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
-import PageMeta from "@/components/page-meta"
-import { useContent } from "@/lib/content-provider"
+import raw from "@/content/es.json"
 import { ChevronRight } from "lucide-react"
 
+const content = raw as any
+const faqItems = content.faq.items
+
 export default function FaqPage() {
-  const { content } = useContent()
-  const faqItems = content.faq.items
-  const page = content.faq
   return (
     <>
-      <PageMeta title={page.seo?.title || "FAQ | DepiFlash"} description={page.seo?.description || "Preguntas frecuentes sobre depilación láser IPL a domicilio en Asunción."} />
-      <Header />
+      <Header phone={content.phone} />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-2">Preguntas frecuentes</h1>
         <p className="text-gray-500 mb-10">Todo lo que querés saber sobre depilación láser IPL a domicilio.</p>
         <div className="space-y-3">
           {faqItems.map((item: any, i: number) => (
             <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex justify-between items-center p-4 cursor-pointer font-medium hover:bg-[#FFF0F5]">
+              <summary className="flex justify-between items-center p-4 cursor-pointer font-medium hover:bg-[#FFF1EE]">
                 <span>{item.question}</span>
                 <ChevronRight className="w-4 h-4 group-open:rotate-90 transition shrink-0" />
               </summary>
@@ -32,10 +30,10 @@ export default function FaqPage() {
           ))}
         </div>
       </div>
-      <CtaBanner title="¿Otra pregunta?" description="Escribime por WhatsApp y te respondo al toque" ctaLabel="Consultar" ctaHref="https://wa.me/595974202025?text=Hola!%20Tengo%20una%20consulta%20sobre%20depilaci%C3%B3n%20l%C3%A1ser" />
-      <Footer />
+      <CtaBanner title="¿Otra pregunta?" description="Escribime por WhatsApp y te respondo al toque" ctaLabel="Consultar" ctaHref={`https://wa.me/${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Tengo%20una%20consulta%20sobre%20depilaci%C3%B3n%20l%C3%A1ser`} />
+      <Footer phone={content.phone} />
       <WhatsAppFloat phone={content.whatsapp} message="Hola! Tengo una consulta" />
-      <MobileCta />
+      <MobileCta phone={content.phone} />
     </>
   )
 }

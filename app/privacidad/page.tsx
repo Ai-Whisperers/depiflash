@@ -1,18 +1,15 @@
-"use client"
-
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
-import PageMeta from "@/components/page-meta"
-import { useContent } from "@/lib/content-provider"
+import raw from "@/content/es.json"
+
+const content = raw as any
 
 export default function PrivacidadPage() {
-  const { content } = useContent()
   return (
     <>
-      <PageMeta title={content.privacidad.seo.title} description={content.privacidad.seo.description} />
-      <Header />
+      <Header phone={content.phone} />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6">Política de privacidad</h1>
         <div className="space-y-4 text-gray-700">
@@ -28,9 +25,9 @@ export default function PrivacidadPage() {
           <p className="text-sm text-gray-500 mt-8">Última actualización: mayo 2026</p>
         </div>
       </div>
-      <Footer />
-      <WhatsAppFloat phone="+595974202025" message="Hola! Consulta sobre privacidad" />
-      <MobileCta />
+      <Footer phone={content.phone} />
+      <WhatsAppFloat phone={content.phone} message="Hola! Consulta sobre privacidad" />
+      <MobileCta phone={content.phone} />
     </>
   )
 }

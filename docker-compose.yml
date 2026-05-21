@@ -8,6 +8,8 @@ services:
       - agent-net
     environment:
       - NODE_ENV=production
+    env_file:
+      - .env
     deploy:
       mode: replicated
       replicas: 2

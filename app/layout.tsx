@@ -3,8 +3,9 @@ import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { ContentProvider } from "@/lib/content-provider"
-import Script from "next/script"
+import raw from "@/content/es.json"
+
+const content = raw as any
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -43,10 +44,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "Service",
     name: "DepiFlash",
-    description: "Depilación láser IPL a domicilio.",
+    description: "Depilación láser IPL a domicilio en Asunción y Gran Asunción.",
     provider: { "@type": "Person", name: "DepiFlash" },
-    areaServed: ["Asunción", "Fernando de la Mora", "San Lorenzo", "Luque", "Lambaré"],
-    telephone: "+595****2025",
+    areaServed: ["Asunción", "Fernando de la Mora", "San Lorenzo", "Luque", "Lambaré", "Mariano Roque Alonso", "Ñemby"],
+    telephone: content.phone,
     url: "https://depiflash.paragu-ai.com",
     serviceType: "Depilación láser IPL",
   }
@@ -55,14 +56,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${playfair.variable} ${inter.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2XQZR3J6K" />
+        <script dangerouslySetInnerHTML={{
+          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2XQZR3J6K',{cookie_flags:'max-age=7200;secure;samesite=none'});`
+        }} />
       </head>
       <body className="antialiased">
-        <ContentProvider>{children}</ContentProvider>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-X2XQZR3J6K" strategy="afterInteractive" />
-        <Script id="ga4" strategy="afterInteractive">{`
-          window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
-          gtag('js',new Date());gtag('config','G-X2XQZR3J6K',{cookie_flags:'max-age=7200;secure;samesite=none'});
-        `}</Script>
+        {children}
         <Analytics />
         <SpeedInsights />
       </body>
