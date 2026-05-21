@@ -14,10 +14,16 @@
 - /api/admin/content rewired to ej_site_config (PUT/GET)
 
 **Phase 2 ✅ — Admin content editor**
-- Full tree editor at /admin/content
-- 5 sections: Business, Pricing, Hero, FAQ, SEO
+- Full tree editor at /admin/content with 5 sections
 - Supabase auth, save to ej_site_config, confirmation feedback
 - Zero TypeScript errors
 
-**Next:** Phase 3 — refactor all pages to use ContentProvider
+**Phase 3 ✅ — All pages use ContentProvider**
+- Home, servicios, como-funciona, faq, contacto, privacidad all refactored
+- No more `import raw from "@/content/es.json"` in any page
+- ContentProvider wraps root layout
+- Footer still uses raw import (server component, no provider needed)
+
+**Next:** Phase 4 — Rate limiting
+
 
