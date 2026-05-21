@@ -2,10 +2,15 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
+import PageMeta from "@/components/page-meta"
+import raw from "@/content/es.json"
+
+const content = raw as any
 
 export default function PrivacidadPage() {
   return (
     <>
+      <PageMeta title={content.privacidad.seo.title} description={content.privacidad.seo.description} />
       <Header />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-6">Política de privacidad</h1>

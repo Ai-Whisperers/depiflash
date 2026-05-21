@@ -5,15 +5,18 @@ import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
+import PageMeta from "@/components/page-meta"
 import raw from "@/content/es.json"
 import { ChevronRight } from "lucide-react"
 
 const content = raw as any
 const faqItems = content.faq.items
+const page = content.faq
 
 export default function FaqPage() {
   return (
     <>
+      <PageMeta title={page.seo?.title || "FAQ | DepiFlash"} description={page.seo?.description || "Preguntas frecuentes sobre depilación láser IPL a domicilio en Asunción."} />
       <Header />
       <div className="max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-2">Preguntas frecuentes</h1>

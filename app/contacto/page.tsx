@@ -2,6 +2,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
+import PageMeta from "@/components/page-meta"
 import raw from "@/content/es.json"
 import { Instagram, MessageCircle, Mail, MapPin } from "lucide-react"
 
@@ -10,6 +11,7 @@ const content = raw as any
 export default function ContactoPage() {
   return (
     <>
+      <PageMeta title={content.contacto.seo.title} description={content.contacto.seo.description} />
       <Header />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-2">Contacto</h1>

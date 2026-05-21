@@ -4,6 +4,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { WhatsAppFloat } from "@/components/whatsapp-float"
 import { MobileCta } from "@/components/mobile-cta"
+import { CtaBanner } from "@/components/cta-banner"
+import PageMeta from "@/components/page-meta"
 import raw from "@/content/es.json"
 import { MessageCircle, Zap } from "lucide-react"
 
@@ -11,8 +13,10 @@ const content = raw as any
 const h = content.home
 
 export default function ServiciosPage() {
+  const zones = h.pricing?.zones || []
   return (
     <>
+      <PageMeta title={content.servicios.seo.title} description={content.servicios.seo.description} />
       <Header />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <h1 className="text-4xl font-bold mb-2">Servicios y precios</h1>
