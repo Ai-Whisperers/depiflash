@@ -1,5 +1,3 @@
-// /api/content — public endpoint for content overrides
-// Client-side components call this to merge Supabase overrides on top of es.json
 import { NextResponse } from "next/server"
 import { createClient } from "@supabase/supabase-js"
 
@@ -9,6 +7,7 @@ const supabase = supabaseUrl && supabaseKey ? createClient(supabaseUrl, supabase
 
 const CONFIG_KEY = "content_overrides"
 
+// GET /api/content — returns overrides merged over defaults
 export async function GET() {
   if (!supabase) {
     return NextResponse.json({ overrides: {} })
@@ -16,9 +15,12 @@ export async function GET() {
 
   const { data } = await supabase
     .from("ej_site_config")
-    .select("value")
+    .select("value, updated_at")
     .eq("key", CONFIG_KEY)
     .single()
 
-  return NextResponse.json({ overrides: data?.value ?? {} })
+  return NextResponse.json({
+    overrides: data?.value ?? {},
+    updatedAt: data?.updated_at ?? null,
+  })
 }

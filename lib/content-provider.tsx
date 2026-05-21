@@ -9,6 +9,7 @@ interface ContentContextType {
   content: ContentData
   get: (path: string) => any
   loading: boolean
+  lastUpdated: string | null
 }
 
 function deepGet(obj: any, path: string): any {
@@ -41,11 +42,13 @@ const ContentContext = createContext<ContentContextType>({
   content: defaultContent as ContentData,
   get: () => undefined,
   loading: false,
+  lastUpdated: null,
 })
 
 export function ContentProvider({ children }: { children: ReactNode }) {
   const [overrides, setOverrides] = useState<ContentData>({})
   const [loading, setLoading] = useState(true)
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null)
   const fetchedRef = useRef(false)
 
   const content = deepMerge(defaultContent, overrides)
@@ -56,23 +59,31 @@ export function ContentProvider({ children }: { children: ReactNode }) {
     return deepGet(defaultContent, path)
   }, [overrides])
 
-  useEffect(() => {
-    if (fetchedRef.current) return
-    fetchedRef.current = true
-
-    fetch("/api/content")
-      .then((res) => res.ok ? res.json() : { overrides: {} })
-      .then((data) => {
+  const fetchOverrides = useCallback(async () => {
+    try {
+      const res = await fetch("/api/content")
+      if (res.ok) {
+        const data = await res.json()
         if (data?.overrides && typeof data.overrides === "object") {
           setOverrides(data.overrides)
         }
-      })
-      .catch(() => { /* silent — use defaults */ })
-      .finally(() => setLoading(false))
+        if (data?.updatedAt) setLastUpdated(data.updatedAt)
+      }
+    } catch {
+      // silent — use defaults
+    } finally {
+      setLoading(false)
+    }
   }, [])
 
+  useEffect(() => {
+    if (fetchedRef.current) return
+    fetchedRef.current = true
+    fetchOverrides()
+  }, [fetchOverrides])
+
   return (
-    <ContentContext.Provider value={{ content, get, loading }}>
+    <ContentContext.Provider value={{ content, get, loading, lastUpdated }}>
       {children}
     </ContentContext.Provider>
   )
