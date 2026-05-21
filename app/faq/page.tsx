@@ -21,7 +21,7 @@ export default function FaqPage() {
         <div className="space-y-3">
           {faqItems.map((item: any, i: number) => (
             <details key={i} className="group border border-gray-200 rounded-xl overflow-hidden bg-white">
-              <summary className="flex justify-between items-center p-4 cursor-pointer font-medium hover:bg-[#FFF1EE]">
+              <summary className="flex justify-between items-center p-4 cursor-pointer font-medium hover:bg-[#FFF0F5]">
                 <span>{item.question}</span>
                 <ChevronRight className="w-4 h-4 group-open:rotate-90 transition shrink-0" />
               </summary>
