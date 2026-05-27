@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import raw from "@/content/es.json"
+import { CookieConsent } from "@ai-whisperers/seo"
+import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
 
 const content = raw as any
 
@@ -54,13 +56,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="es" className={`${playfair.variable} ${inter.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X2XQZR3J6K" />
-        <script dangerouslySetInnerHTML={{
-          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-X2XQZR3J6K',{cookie_flags:'max-age=7200;secure;samesite=none'});`
-        }} />
+
       </head>
       <body className="antialiased pb-20 md:pb-0">
         {children}
+        <WhatsAppFloat />
+        <CookieConsent />
       </body>
     </html>
   )
