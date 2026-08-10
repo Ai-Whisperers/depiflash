@@ -43,7 +43,7 @@
 **Mujer 25-45, clase media-alta**
 - Barrios: Villa Morra, Carmelitas, Recoleta, San Cristóbal, Las Lomas
 - Valora: comodidad, tiempo, privacidad
-- Compra por: recomendación, Instagram, WhatsApp
+- Compra por: recomendación, Instagram, Messaging
 
 ---
 
@@ -52,7 +52,7 @@
 | # | Canal | Costo | Impacto | Esfuerzo |
 |---|-------|-------|---------|----------|
 | 1 | **Uber (conversación + tarjetas)** | Gs. 200,000/mes | 🔥 Muy Alto | Bajo |
-| 2 | **WhatsApp (estados + difusión)** | $0 | 🔥 Alto | Bajo |
+| 2 | **Messaging (estados + difusión)** | $0 | 🔥 Alto | Bajo |
 | 3 | **Instagram (Reels + Historias)** | $0-$50/mes ads | 🔥 Alto | Medio |
 | 4 | **Referidos (boca a boca)** | $0 (descuentos) | 🔥 Alto | Bajo |
 | 5 | **Facebook Groups** | $0 | Medio | Bajo |
@@ -116,8 +116,8 @@ Corte a: dispositivo sobre piel: "La sesión completa dura menos que tu café."
 
 [CIERRE: 15-30s]
 Dan sonriendo: "Voy a tu casa, en 30 minutos estás lista.
-Escribime por WhatsApp y coordinamos."
-Texto: LINK EN BIO / WhatsApp
+Escribime por Messaging y coordinamos."
+Texto: LINK EN BIO / Messaging
 ```
 
 #### Instagram Story Ad
@@ -126,7 +126,7 @@ Frame 1: "¿CERA O IPL?"
 Frame 2: "Cera = dolor cada mes. IPL = 8-10 sesiones y listo."
 Frame 3: "Voy a tu casa. Sin esperas. Sin vergüenza."
 Frame 4: "Escribime y coordinamos ⬇️"
-Frame 5: [BOTÓN: WhatsApp / Reservar]
+Frame 5: [BOTÓN: Messaging / Reservar]
 ```
 
 #### Facebook Feed Ad
@@ -144,7 +144,7 @@ Frame 5: [BOTÓN: WhatsApp / Reservar]
 ✅ 30-50% más barato que clínicas
 
 📍 Asunción y Gran Asunción
-📱 Escribime por WhatsApp → [LINK]
+📱 Escribime por Messaging → [LINK]
 
 #depilacionlaser #ipl #asuncion #depiflash #bellezaencasa
 ```
@@ -159,10 +159,10 @@ Descripción 1: Depilación láser IPL sin moverte de tu casa.
 Precios desde Gs. 50.000/sesión. Asunción y Gran Asunción.
 
 Descripción 2: Olvidate de la cera. Resultados permanentes. 
-Voy a tu domicilio con el equipo profesional. Consultame por WhatsApp.
+Voy a tu domicilio con el equipo profesional. Consultame por Messaging.
 ```
 
-#### WhatsApp Broadcast (a contactos existentes)
+#### Messaging Broadcast (a contactos existentes)
 ```
 ✨ ¡DEPIFLASH EN ASUNCIÓN! ✨
 
@@ -183,7 +183,7 @@ Respondeme "INFO" y te cuento 🏃‍♂️
 
 ### Campaña 1: Adquisición (Prospecting)
 
-**Objetivo:** Llevar personas a WhatsApp
+**Objetivo:** Llevar personas a Messaging
 **Plataforma:** Instagram + Facebook (Advantage+ placements)
 **Formato:** Reels + Feed (Video/Imagen)
 **Presupuesto sugerido:** $3-5/día (Gs. 25,000-40,000/día)
@@ -192,7 +192,7 @@ Respondeme "INFO" y te cuento 🏃‍♂️
 |----------|-------|-----|
 | Video 15s: "¿Esto duele?" (hook dolor) | Copy dolor → solución → oferta | "Escribime" |
 | Imagen: antes/después axilas | "Resultado real. 3 sesiones." | "Consultar" |
-| Video 30s: Dan presentando | "Soy Dan, hago Uber en Asunción y también esto" | "WhatsApp" |
+| Video 30s: Dan presentando | "Soy Dan, hago Uber en Asunción y también esto" | "Messaging" |
 | Carousel: 5 frames "Cera vs IPL" | Comparativa visual + precios | "Reservar" |
 
 ### Campaña 2: Retargeting (Calientes)
@@ -213,7 +213,7 @@ Escribime y te tomo esta semana ⬇️
 ### Campaña 3: Ofertas Relámpago (Same-Day)
 
 **Objetivo:** Llenar huecos en el día
-**Canal:** Instagram Stories + WhatsApp Estado
+**Canal:** Instagram Stories + Messaging Estado
 **Frecuencia:** 2-3x/semana cuando tengas horarios libres
 
 ```
@@ -255,7 +255,7 @@ Campaña: DepiFlash - Search
 
 ### Estrategia de Puja
 - **Diaro recomendado:** $5-15/día (Gs. 40,000-120,000)
-- **Puja:** Maximizar clics (empezar), luego optimizar por conversiones (WhatsApp clicks)
+- **Puja:** Maximizar clics (empezar), luego optimizar por conversiones (Messaging clicks)
 - **Geo:** Asunción + radio 15km
 - **Horario:** 8:00-21:00 (cuando la gente agenda)
 - **Dispositivos:** Mobile优先 (98% del tráfico)
@@ -290,7 +290,7 @@ Campaña: DepiFlash - Search
 | Testimonio en video de clienta | Reel 20-30s |
 | Contador: "Ya son [X] sesiones realizadas" | Historias |
 | "Ella vino por bikini, esto pasó después de 4 sesiones" | Imagen |
-| Captura de WhatsApp: clienta feliz | Historias |
+| Captura de Messaging: clienta feliz | Historias |
 | Minuto a minuto: sesión real (timelapse) | Reel 15s |
 
 #### Pilar 3: El Factor Dan (20%)
@@ -307,7 +307,7 @@ Campaña: DepiFlash - Search
 
 #### Pilar 4: Ofertas & Promociones (10%)
 **Objetivo:** Conversión directa
-**Formatos:** Historias con stickers, posts con link directo a WhatsApp
+**Formatos:** Historias con stickers, posts con link directo a Messaging
 
 | Idea | Formato |
 |------|---------|
@@ -323,7 +323,7 @@ Campaña: DepiFlash - Search
 | Historias de Instagram | 3-5/día (detrás de escena, ubicaciones, interactivas) |
 | Reels | 3-4/semana |
 | Posts de feed | 2-3/semana |
-| Estados de WhatsApp | 3-5/semana |
+| Estados de Messaging | 3-5/semana |
 | Publicaciones en grupos de FB | 2/semana |
 
 ### Hashtags Estratégicos
@@ -365,7 +365,7 @@ Por ubicación:
 **Canales:** Uber (tarjeta), Instagram (Reels), Google Search, Facebook Groups
 
 **Qué hacer:**
-- Tarjetas profesionales en el auto (QR a WhatsApp)
+- Tarjetas profesionales en el auto (QR a Messaging)
 - 3-4 Reels/semana
 - Google Ads con palabras clave de intención alta
 - Post en grupos de FB de belleza 2x/semana
@@ -373,18 +373,18 @@ Por ubicación:
 **Métrica:** Impresiones, alcance, visitas al perfil
 
 ### Etapa 2: Interés (Consideration)
-**Canales:** Instagram perfil + Historias, WhatsApp, Google My Business
+**Canales:** Instagram perfil + Historias, Messaging, Google My Business
 
 **Qué hacer:**
-- Perfil de Instagram completo: link a WhatsApp, destacadas con servicios/precios/FAQ
+- Perfil de Instagram completo: link a Messaging, destacadas con servicios/precios/FAQ
 - Google My Business con reseñas y fotos
-- Catálogo de WhatsApp Business con todos los servicios y precios
+- Catálogo de Messaging Business con todos los servicios y precios
 - Responder TODAS las consultas en < 30 minutos
 
-**Métrica:** Clics a WhatsApp, preguntas recibidas
+**Métrica:** Clics a Messaging, preguntas recibidas
 
 ### Etapa 3: Decisión (Conversion)
-**Canales:** WhatsApp (conversación directa)
+**Canales:** Messaging (conversación directa)
 
 **Qué hacer:**
 - Responder rápido (< 5 minutos en hora laboral)
@@ -396,7 +396,7 @@ Por ubicación:
 **Métrica:** Conversaciones → sesiones agendadas, tasa de cierre
 
 ### Etapa 4: Post-Venta (Retention & Referral)
-**Canales:** WhatsApp
+**Canales:** Messaging
 
 **Qué hacer:**
 - 24h después: mensaje de seguimiento + cuidados
@@ -407,7 +407,7 @@ Por ubicación:
 
 **Métrica:** Tasa de retención, referidos por clienta, reseñas en Google
 
-### Guiones de WhatsApp por Etapa
+### Guiones de Messaging por Etapa
 
 #### Primer contacto (cliente nueva)
 ```
@@ -485,7 +485,7 @@ Si tenés una amiga/familiar que quiera probar:
 🙋‍♀️ VOS: 20% OFF en tu próxima sesión
 👩‍👧‍👧 ELLA: 20% OFF en su primera sesión
 
-Solo decime su nombre y WhatsApp y le hablo yo. Sin compromiso 😊
+Solo decime su nombre y Messaging y le hablo yo. Sin compromiso 😊
 ```
 
 ---
@@ -497,7 +497,7 @@ Solo decime su nombre y WhatsApp y le hablo yo. Sin compromiso 😊
 **Target:** Gimnasios en Villa Morra, Carmelitas, Recoleta
 **Oferta:** Comisión por referido (Gs. 10,000-20,000 por clienta referida)
 
-**Guión para WhatsApp a gimnasio:**
+**Guión para Messaging a gimnasio:**
 ```
 Hola! Soy Dan de DepiFlash.
 Ofrezco depilación láser IPL a domicilio en Asunción.
@@ -596,8 +596,8 @@ Sin compromiso, solo colaboración 🤝
 | **Miércoles** | 📸 Carousel: comparativa/educativo | 📱 Historia: interactiva (encuesta) |
 | **Jueves** | 🎬 Reel: "El Factor Dan" (detrás de escena) | 📱 Historia: oferta relámpago |
 | **Viernes** | 📸 Post: promoción semanal | 📱 Historia: "Estoy en [barrio], horario libre" |
-| **Sábado** | 📱 Historias: recordatorio + casos | 📱 WhatsApp estado: promoción fin de semana |
-| **Domingo** | 📱 Historias: preparación para la semana | 📱 WhatsApp estado: "Agendá tu semana" |
+| **Sábado** | 📱 Historias: recordatorio + casos | 📱 Messaging estado: promoción fin de semana |
+| **Domingo** | 📱 Historias: preparación para la semana | 📱 Messaging estado: "Agendá tu semana" |
 
 ### Ideas para Contenido Estacional
 
@@ -618,7 +618,7 @@ Sin compromiso, solo colaboración 🤝
 | Métrica | Benchmark | Cómo medirlo |
 |---------|-----------|-------------|
 | Engagement rate Instagram | >3% (cuenta chica) | Insights de Instagram |
-| Tasa de clics a WhatsApp | >5% en Stories | N/A (manual) |
+| Tasa de clics a Messaging | >5% en Stories | N/A (manual) |
 | Costo por lead (ads) | < Gs. 20,000 | Meta Ads Manager |
 | Tasa de conversión (consulta → sesión) | >50% | Seguimiento manual |
 | Tasa de retención (vuelven a 2da sesión) | >60% | Planilla de clientas |
@@ -638,7 +638,7 @@ Sin compromiso, solo colaboración 🤝
 |---------|----------|
 | Tarjetas entregadas por día | 5-10 |
 | Conversaciones iniciadas por día | 2-3 |
-| Conversaciones que llevan a consulta de WhatsApp | 1/semana |
+| Conversaciones que llevan a consulta de Messaging | 1/semana |
 
 ---
 
@@ -646,7 +646,7 @@ Sin compromiso, solo colaboración 🤝
 
 **Cada lunes:**
 - [ ] Publicar mínimo 2 Reels en Instagram
-- [ ] Actualizar estados de WhatsApp (3-5)
+- [ ] Actualizar estados de Messaging (3-5)
 - [ ] Responder TODOS los mensajes pendientes
 - [ ] Reponer tarjetas en el auto si es necesario
 

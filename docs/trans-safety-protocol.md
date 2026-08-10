@@ -31,8 +31,8 @@
 | # | Medida | Por qué |
 |---|--------|---------|
 | 1 | **Pedir nombre completo + dirección exacta + referencias** | Si duda o se contradice, no vas |
-| 2 | **Llamar por teléfono antes de ir** (no solo WhatsApp) | Escuchás la voz. Confirmás dirección. Si no contesta, no vas. |
-| 3 | **Compartir ubicación en tiempo real con alguien de confianza** (Ivan, amigo, familiar) | Google Maps o WhatsApp tiene "compartir ubicación en vivo" |
+| 2 | **Llamar por teléfono antes de ir** (no solo Messaging) | Escuchás la voz. Confirmás dirección. Si no contesta, no vas. |
+| 3 | **Compartir ubicación en tiempo real con alguien de confianza** (Ivan, amigo, familiar) | Google Maps o Messaging tiene "compartir ubicación en vivo" |
 | 4 | **Decir a quién vas a ver y dónde antes de salir** | "Voy a casa de [nombre] en [dirección] a las [hora]" |
 | 5 | **Primeras sesiones: solo zonas conocidas** | Empezá en barrios que ya conocés de Uber (Villa Morra, Carmelitas, Recoleta) |
 | 6 | **Pago por transferencia ANTES de la sesión** (opcional) | Si pagó antes, no lleva efectivo. Menos incentivo para robo. |
@@ -46,7 +46,7 @@
 | 9 | **No dejar equipo a la vista en el auto** | Llevar en mochila, no en la mano |
 | 10 | **Avisar "estoy adentro" a tu contacto** | "Ya entré. Dirección: [X]. En 30 min salgo" |
 | 11 | **Confiar en tu intuición** | Si algo se siente mal (nerviosismo, historia inconsistente, preguntas raras sobre tu equipo), cancelás. Decís "pasó algo, tengo que reprogramar" |
-| 12 | **Dejar el teléfono en el auto o en la mochila** | Si te roban el celular perdés datos, contactos, WhatsApp Business |
+| 12 | **Dejar el teléfono en el auto o en la mochila** | Si te roban el celular perdés datos, contactos, Messaging Business |
 
 ### Después de la sesión (SALIDA)
 
@@ -58,7 +58,7 @@
 
 ---
 
-## PROTOCOLO COMPRIMIDO (para tener en WhatsApp)
+## PROTOCOLO COMPRIMIDO (para tener en Messaging)
 
 ```
 ANTES:
@@ -115,7 +115,7 @@ DESPUÉS:
 |-----------|--------|
 | Te sentís inseguro al llegar | No bajés del auto. Decí "perdón, me surgió un problema, te escribo para reprogramar". Rajá. |
 | Te están robando tu equipo | Entregá todo. No opongas resistencia. Tu vida vale más que la máquina. |
-| Te roban el celular | Bloqueá la línea con tu operador. Cambiá contraseñas de WhatsApp. |
+| Te roban el celular | Bloqueá la línea con tu operador. Cambiá contraseñas de Messaging. |
 | Te sentís seguido después | Andá a un lugar público concurrido (estación de servicio, shopping). No vayas a tu casa. |
 | Testigo de algo ilegal en la casa | Terminá la sesión rápido. Nunca vuelvas. |
 

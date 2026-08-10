@@ -38,7 +38,7 @@ export interface ServiceItem {
   priceUsd?: string
   description: string
   delivery: string
-  whatsappCta?: string
+  messagingCta?: string
   crossSell?: string
 }
 
@@ -163,7 +163,7 @@ export interface FAQContent {
   items: FAQItem[]
 }
 
-export interface WhatsAppContent {
+export interface MessagingContent {
   defaultMessage: string
   serviceMessage: string
   phone: string
@@ -172,7 +172,7 @@ export interface WhatsAppContent {
 export interface ContactInfo {
   title?: string
   phone: string
-  whatsapp: string
+  messaging: string
   email: string
   instagram: string
   facebook: string
@@ -220,7 +220,7 @@ export interface Content {
   premades: PremadesContent
   portafolio: { seo: { title: string; description: string }; hero: { headline: string; subheadline: string } }
   faq: FAQContent
-  whatsapp: WhatsAppContent
+  messaging: MessagingContent
   contacto: ContactoContent
   footer: FooterContent
 }

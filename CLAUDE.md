@@ -29,6 +29,6 @@ docker stack deploy -c docker-compose.yml depiflash
 ## Critical Patterns
 - All content in content/es.json
 - No database — fully static
-- WhatsApp is the primary booking channel
+- Messaging is the primary booking channel
 - Coral/teal gradient theme
 - Mobile laser service — no fixed location

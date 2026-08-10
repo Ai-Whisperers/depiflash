@@ -3,7 +3,7 @@ import { Playfair_Display, Inter } from "next/font/google"
 import "./globals.css"
 import raw from "@/content/es.json"
 import { CookieConsent } from "@ai-whisperers/seo"
-import { WhatsAppFloat } from "@ai-whisperers/whatsapp"
+import { MessagingFloat } from "@ai-whisperers/messaging"
 
 const content = raw as any
 
@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="antialiased pb-20 md:pb-0">
         {children}
-        <WhatsAppFloat />
+        <MessagingFloat />
         <CookieConsent />
       </body>
     </html>

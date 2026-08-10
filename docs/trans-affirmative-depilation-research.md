@@ -20,7 +20,7 @@
 | 11 | ¿Paquete especial? | Investigar buenas ideas. |
 | 12 | ¿Primera sesión gratis? | Sí, primera gratis (primeras 10 personas, tiempo limitado). Mitad de precio hasta mes X. |
 | 13 | ¿Asociaciones? | PANAMBI (difícil contactar), SOMOSGAY (más fácil), TEDIC (no contacto), KUÑA MBARETE (no conoce). |
-| 14 | ¿Cómo llegar? | Flyers en orgs + grupos Telegram/WhatsApp + líder comunitaria + IG sutil + Uber. | |
+| 14 | ¿Cómo llegar? | Flyers en orgs + grupos Telegram/Messaging + líder comunitaria + IG sutil + Uber. | |
 | 15 | ¿Marca o persona? | Depende del contexto — en comunidades usar nombre, en web usar marca. |
 | 16 | ¿Líder trans prueba gratis? | Sí, totalmente. |
 | 17 | ¿Visibilidad? | Totalmente visible — web, redes, público. |
@@ -200,7 +200,7 @@ Basado en modelos de clínicas afirmativas en USA, UK, Brasil y Argentina.
 #### Cómo incluirlo en la web de DepiFlash (sin ser explícito):
 
 1. **Sección "Servicios Especiales"** — dentro de /servicios, un subtítulo que diga "Programa de reafirmación de género — consultá por precios especiales para tratamiento facial completo."
-2. **Pregunta en FAQ** — "¿Ofrecen descuentos especiales?" → "Sí, tenemos un programa de descuento por reafirmación de género. Consultanos por WhatsApp para más información."
+2. **Pregunta en FAQ** — "¿Ofrecen descuentos especiales?" → "Sí, tenemos un programa de descuento por reafirmación de género. Consultanos por Messaging para más información."
 3. **Texto sutil en el hero** — "Depilación IPL para todas las identidades" o "Ambiente seguro y respetuoso para cada persona."
 
 ---

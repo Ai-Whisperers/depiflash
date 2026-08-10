@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import raw from "@/content/es.json"
@@ -50,9 +50,9 @@ export default function ComoFuncionaPage() {
           </ul>
         </div>
       </div>
-      <CtaBanner title="¿Lista para tu primera sesión?" description="Escribime por WhatsApp y coordinamos" ctaLabel="Reservar ahora" ctaHref={`https://wa.me/${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20reservar%20mi%20primera%20sesi%C3%B3n`} />
+      <CtaBanner title="¿Lista para tu primera sesión?" description="Escribime por Messaging y coordinamos" ctaLabel="Reservar ahora" ctaHref={`tel:+${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20reservar%20mi%20primera%20sesi%C3%B3n`} />
       <Footer phone={content.phone} />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Cómo funciona el servicio?" />
+      <MessagingFloat phone={content.messaging} message="Hola! Cómo funciona el servicio?" />
       <MobileCta phone={content.phone} />
     </>
   )

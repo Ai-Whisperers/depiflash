@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import { MessageCircle, Zap } from "lucide-react"
@@ -39,8 +39,8 @@ export default function ServiciosPage() {
 
         <div className="bg-[#FFF0F5] rounded-xl p-6">
           <h2 className="font-bold text-lg mb-3">💡 Paquetes con descuento</h2>
-          <p className="text-gray-600 mb-4">Comprando un paquete de 6 sesiones, el precio por sesión baja entre 15% y 20%. Consultame por WhatsApp y te preparo un presupuesto personalizado.</p>
-          <a href={`https://wa.me/${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20un%20presupuesto%20personalizado%20para%20depilaci%C3%B3n%20l%C3%A1ser%20IPL`}
+          <p className="text-gray-600 mb-4">Comprando un paquete de 6 sesiones, el precio por sesión baja entre 15% y 20%. Consultame por Messaging y te preparo un presupuesto personalizado.</p>
+          <a href={`tel:+${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20un%20presupuesto%20personalizado%20para%20depilaci%C3%B3n%20l%C3%A1ser%20IPL`}
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#E8A0BF] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#D484A8] transition">
             <MessageCircle className="w-5 h-5" /> Pedir presupuesto
@@ -75,7 +75,7 @@ export default function ServiciosPage() {
         </div>
       </div>
       <Footer phone={content.phone} />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero consultar precios de depilación" />
+      <MessagingFloat phone={content.messaging} message="Hola! Quiero consultar precios de depilación" />
       <MobileCta phone={content.phone} />
     </>
   )

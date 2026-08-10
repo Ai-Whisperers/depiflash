@@ -16,7 +16,7 @@ depiflash.paragu-ai.com
 ├── /servicios                 # Tabla de precios + preparación
 ├── /como-funciona             # 5 pasos del proceso
 ├── /faq                       # 8 preguntas frecuentes
-├── /contacto                  # WhatsApp, email, cobertura
+├── /contacto                  # Messaging, email, cobertura
 ├── /privacidad                # Política de privacidad estática
 ├── /sitemap.xml               # Sitemap automático (Next.js)
 ├── /robots.txt                # Robots configurado
@@ -39,9 +39,9 @@ app/
 ├── robots.ts
 
 components/
-├── header.tsx          # Nav fijo con gradient logo DF + WhatsApp button
+├── header.tsx          # Nav fijo con gradient logo DF + Messaging button
 ├── footer.tsx          # 3 columnas: logo, enlaces, contacto
-├── whatsapp-float.tsx   # Botón flotante verde (fijo)
+├── messaging-float.tsx   # Botón flotante verde (fijo)
 ├── mobile-cta.tsx       # Barra inferior en mobile
 ├── cta-banner.tsx       # Sección coral→teal gradient con CTA
 ├── process-section.tsx  # Paso a paso reutilizable
@@ -71,7 +71,7 @@ types/
 | Testimonials | ✅ | 3 testimonios con rating |
 | FAQ (7 items) | ✅ | Acordeón funcional |
 | CTA final | ✅ | Gradiente coral→teal, botón blanco |
-| WhatsApp float | ✅ | Verde, fijo |
+| Messaging float | ✅ | Verde, fijo |
 | Footer | ✅ | 3 columnas, links, contacto |
 
 **Problemas:**
@@ -99,7 +99,7 @@ types/
 | 5 pasos con íconos | ✅ | Claros, buen formato |
 | Card de preparación importante | ✅ | Resaltada en coral |
 
-**Oportunidad:** Agregar un paso 0: "Consultame por WhatsApp" al principio
+**Oportunidad:** Agregar un paso 0: "Consultame por Messaging" al principio
 
 ### /faq — ⚠️ Contenido duplicado
 
@@ -113,7 +113,7 @@ types/
 
 | Aspecto | Estado | Problema |
 |---------|--------|----------|
-| WhatsApp | ✅ | Número + botón |
+| Messaging | ✅ | Número + botón |
 | Email | ✅ | info@depiflash.com.py |
 | Cobertura | ✅ | Asunción + Gran Asunción |
 | **Falta mapita** | ⚠️ | Sería bueno un mapa visual de la zona de cobertura |
@@ -135,7 +135,7 @@ Botón "Volver al inicio". Sin diseño especial ni enlaces útiles.
 
 | Línea | Problema | Severidad |
 |-------|----------|-----------|
-| WhatsApp | `"whatsapp": "+595****2025"` tiene **** (placeholder). `whatsappLink` tiene el número real. | ⚠️ Medio |
+| Messaging | `"messaging": "+595****2025"` tiene **** (placeholder). `messagingLink` tiene el número real. | ⚠️ Medio |
 | Gallery | `"placeholder": true` — no hay fotos reales | 🔴 Alto |
 | Precios | No hay precio para barba/hombre ni servicio trans | 🔴 Alto |
 | FAQ home | 7 preguntas | ✅ |
@@ -151,7 +151,7 @@ Botón "Volver al inicio". Sin diseño especial ni enlaces útiles.
   "title": "Programa de Reafirmación",
   "description": "Consultá por nuestro programa de reafirmación de género. Depilación facial con precios especiales y ambiente de respeto.",
   "discount": "20",
-  "whatsappMessage": "Hola! Quiero info sobre el programa de reafirmación"
+  "messagingMessage": "Hola! Quiero info sobre el programa de reafirmación"
 }
 ```
 
@@ -168,7 +168,7 @@ Botón "Volver al inicio". Sin diseño especial ni enlaces útiles.
 | Botones | Clara distinción primario/secundario |
 | Responsive | Mobile-first |
 | Nav sticky | Siempe visible |
-| WhatsApp float | Accesible siempre |
+| Messaging float | Accesible siempre |
 
 ### Puntos débiles
 | Aspecto | Problema |
@@ -222,7 +222,7 @@ Botón "Volver al inicio". Sin diseño especial ni enlaces útiles.
 | # | Mejora | Esfuerzo | Impacto |
 |---|--------|----------|---------|
 | 1 | **Agregar favicon** (PNG/ICO en /public + link en layout) | 5 min | 🔴 Alto |
-| 2 | **Corregir whatsapp placeholder** ("****" en es.json) | 1 min | 🔴 Alto |
+| 2 | **Corregir messaging placeholder** ("****" en es.json) | 1 min | 🔴 Alto |
 | 3 | **Agregar sección "Programa de Reafirmación"** en /servicios y es.json | 30 min | 🔴 Alto |
 | 4 | **Agregar pregunta en FAQ** sobre descuentos especiales | 10 min | 🔴 Alto |
 | 5 | **Agregar link a Instagram** en contacto y footer | 15 min | 🔴 Alto |
@@ -252,7 +252,7 @@ Botón "Volver al inicio". Sin diseño especial ni enlaces útiles.
 | 19 | **Esquema de colores modo oscuro** | 1 hora |
 | 20 | **Testimonios con fotos** de perfil (con permiso) | — |
 | 21 | **Animaciones sutiles** en scroll (fade-in) | 1 hora |
-| 22 | **Agregar WhatsApp Business API** para chatbot básico | 3-4 horas |
+| 22 | **Agregar Messaging Business API** para chatbot básico | 3-4 horas |
 
 ---
 
@@ -286,7 +286,7 @@ Botón "Volver al inicio". Sin diseño especial ni enlaces útiles.
 
 ### Fase 1: Hoy (30 min)
 - [ ] 1. Agregar favicon (icono 32x32 PNG)
-- [ ] 2. Corregir whatsapp "****" en es.json
+- [ ] 2. Corregir messaging "****" en es.json
 - [ ] 3. Agregar sección "Programa de Reafirmación" en servicios
 - [ ] 4. Agregar FAQ sobre descuentos
 - [ ] 5. Agregar link a Instagram
@@ -320,10 +320,10 @@ En el `<head>` de layout.tsx:
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 ```
 
-### 2. WhatsApp placeholder
+### 2. Messaging placeholder
 **Archivo:** content/es.json, línea 5
 ```json
-"whatsapp": "+595974202025"
+"messaging": "+595974202025"
 ```
 
 ### 3. Sección "Programa de Reafirmación"
@@ -332,8 +332,8 @@ En el `<head>` de layout.tsx:
 "reafirmacion": {
   "title": "Programa de Reafirmación",
   "description": "Consultá por nuestro programa de reafirmación de género — depilación facial con precios especiales.",
-  "ctaLabel": "Consultar por WhatsApp",
-  "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20sobre%20el%20programa%20de%20reafirmación"
+  "ctaLabel": "Consultar por Messaging",
+  "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20sobre%20el%20programa%20de%20reafirmación"
 }
 ```
 
@@ -342,7 +342,7 @@ En el `<head>` de layout.tsx:
 ### 4. FAQ
 **Archivo:** content/es.json — agregar item en ambos arrays:
 ```json
-{ "question": "¿Ofrecen descuentos especiales?", "answer": "Sí, tenemos un programa de reafirmación de género con precios especiales para depilación facial. Escribinos por WhatsApp y te contamos sin compromiso." }
+{ "question": "¿Ofrecen descuentos especiales?", "answer": "Sí, tenemos un programa de reafirmación de género con precios especiales para depilación facial. Escribinos por Messaging y te contamos sin compromiso." }
 ```
 
 ### 5. Instagram
@@ -365,11 +365,11 @@ En el `<head>` de layout.tsx:
 |-----------|------|-------------|
 | **Funcionalidad** | 8/10 | Todo funciona, nada roto |
 | **Diseño** | 7/10 | Lindo pero sin fotos ni rostro humano |
-| **Contenido** | 5/10 | Sin fotos reales, sin mención del servicio trans, placeholder en WhatsApp |
+| **Contenido** | 5/10 | Sin fotos reales, sin mención del servicio trans, placeholder en Messaging |
 | **SEO** | 6/10 | Sitemap bien, falta favicon, og:image, contenido SEO (blog) |
 | **Performance** | 9/10 | Rápido, h3, 49KB, sin JS pesado |
 | **Accesibilidad** | 6/10 | Sin alt text, sin contraste auditivo |
-| **UX Móvil** | 8/10 | Mobile-first, WhatsApp sticky, CTA inferior |
+| **UX Móvil** | 8/10 | Mobile-first, Messaging sticky, CTA inferior |
 | **Prueba Social** | 3/10 | Sin fotos, sin contadores, testimonios genéricos |
 | **Completitud negocio** | 5/10 | Falta toda la línea de servicio afirmativo en el sitio |
 

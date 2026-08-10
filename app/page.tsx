@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import raw from "@/content/es.json"
 import { House, Zap, Clock, Shield, MessageCircle, Sparkles, Truck, ChevronRight, Star, Check } from "lucide-react"
@@ -117,7 +117,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-8">
-            <a href={content.whatsappLink}
+            <a href={content.messagingLink}
               target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#E8A0BF] text-white px-8 py-3 rounded-xl font-semibold hover:bg-[#D484A8] transition">
               <MessageCircle className="w-5 h-5" /> Consultar paquetes
@@ -219,8 +219,8 @@ export default function Home() {
       <section className="relative overflow-hidden py-16" style={{ background: "linear-gradient(135deg, #E8A0BF 0%, #C4A4D4 100%)" }}>
         <div className="mx-auto max-w-3xl px-4 text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">Probá tu primera sesión</h2>
-          <p className="mb-8 text-lg text-white/90">Escribime por WhatsApp, decime qué zona querés tratarte y elegimos día y horario.</p>
-          <a href={`https://wa.me/${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20reservar%20mi%20primera%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL`}
+          <p className="mb-8 text-lg text-white/90">Escribime por Messaging, decime qué zona querés tratarte y elegimos día y horario.</p>
+          <a href={`tel:+${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20reservar%20mi%20primera%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL`}
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-[#E8A0BF] transition-all hover:scale-105">
             <MessageCircle className="w-5 h-5" /> Escribime ahora
@@ -229,7 +229,7 @@ export default function Home() {
       </section>
 
       <Footer phone={content.phone} />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Quiero info sobre depilación láser IPL a domicilio" />
+      <MessagingFloat phone={content.messaging} message="Hola! Quiero info sobre depilación láser IPL a domicilio" />
       <MobileCta phone={content.phone} />
     </>
   )

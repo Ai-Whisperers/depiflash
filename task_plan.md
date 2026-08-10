@@ -2,7 +2,7 @@
 
 ## Overview
 
-4 changes from Dan's WhatsApp messages on May 20-21, 2026:
+4 changes from Dan's Messaging messages on May 20-21, 2026:
 
 1. **Synonym for "Inglés completo"** → change to standard term
 2. **Electrolysis research** → add electrolysis as complementary service?  
@@ -91,7 +91,7 @@ Based on Dan's requirements (pastel pink + feminine + elegant):
 7. `app/faq/page.tsx` — inline styles
 8. `components/header.tsx` — any custom colors
 9. `components/footer.tsx` — custom colors
-10. `components/whatsapp-float.tsx` — custom colors
+10. `components/messaging-float.tsx` — custom colors
 11. `components/mobile-cta.tsx` — custom colors
 12. `components/cta-banner.tsx` — custom colors
 
