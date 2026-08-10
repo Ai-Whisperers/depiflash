@@ -63,7 +63,7 @@ No es "dejar Uber para hacer láser". Es **usar Uber como canal de marketing y l
 - Trabaja: oficina, profesional independiente, negocio propio
 - Problema: No tiene tiempo de ir a clínicas
 - Lo que valora: comodidad, privacidad, que vayan a su casa
-- Cómo llega: recomendación de amigas, Instagram, grupos de WhatsApp
+- Cómo llega: recomendación de amigas, Instagram, grupos de Messaging
 
 ### Perfil #2: Hombre 25-40 (SECUNDARIO)
 - Vive en: mismos barrios
@@ -85,7 +85,7 @@ No es "dejar Uber para hacer láser". Es **usar Uber como canal de marketing y l
 
 | Táctica | Costo | Impacto |
 |---------|-------|---------|
-| Tarjetas en el asiento trasero con QR a WhatsApp | Gs. 200,000/mes | ALTO — cada pasajero ve la tarjeta |
+| Tarjetas en el asiento trasero con QR a Messaging | Gs. 200,000/mes | ALTO — cada pasajero ve la tarjeta |
 | Conversación natural con pasajeras: "¿Conocés la depilación láser?" | $0 | MUY ALTO — confianza de Uber |
 | Descuento "Uber10" para primeros clientes | 10% desc. | Medio — incentiva probar |
 | Calcomanía chica en la ventana trasera | Gs. 50,000 | Medio — branding pasivo |
@@ -107,10 +107,10 @@ No es "dejar Uber para hacer láser". Es **usar Uber como canal de marketing y l
 - Historias: "Estoy en Villa Morra todo el día, si querés sesión avisame"
 - Sin presupuesto de anuncios (orgánico)
 
-### Canal #4: WHATSAPP
+### Canal #4: MESSAGING
 - Estados: "Hoy tengo 2 horarios libres en Carmelitas"
 - Listas de difusión: ofertas relámpago para same-day bookings
-- Catálogo de WhatsApp Business con precios
+- Catálogo de Messaging Business con precios
 
 ### Canal #5: GOOGLE MY BUSINESS
 - Registrarse como "Depilación láser a domicilio"
@@ -150,13 +150,13 @@ No es "dejar Uber para hacer láser". Es **usar Uber como canal de marketing y l
 | Hora | Actividad |
 |------|-----------|
 | 06:00 - 09:00 | Uber (hora pico mañana) |
-| 09:00 - 10:00 | Descanso, responder WhatsApp |
+| 09:00 - 10:00 | Descanso, responder Messaging |
 | 10:00 - 12:00 | Sesiones láser (2-3) |
 | 12:00 - 14:00 | Uber (mediodía) |
 | 14:00 - 17:00 | Uber (tarde) |
 | 17:00 - 19:00 | Sesiones láser (2-3) |
 | 19:00 - 22:00 | Uber (noche) |
-| 22:00 - 23:00 | Responder WhatsApp, agendar próximo día |
+| 22:00 - 23:00 | Responder Messaging, agendar próximo día |
 
 ---
 
@@ -199,7 +199,7 @@ Comparado con Uber: un buen Uber driver en Asunción gana Gs. 3-6 millones/mes n
 - [ ] Comprar máquina IPL (FB Marketplace PY)
 - [ ] Comprar lentes, gel, insumos
 - [ ] Crear Instagram @depiflash.py
-- [ ] Crear WhatsApp Business con foto de perfil
+- [ ] Crear Messaging Business con foto de perfil
 - [ ] Mandar a hacer tarjetas
 
 ### Semana 2: Práctica
@@ -216,6 +216,6 @@ Comparado con Uber: un buen Uber driver en Asunción gana Gs. 3-6 millones/mes n
 
 ### En Marcha
 - [ ] Subir contenido a Instagram 3x/semana
-- [ ] Actualizar estados de WhatsApp
+- [ ] Actualizar estados de Messaging
 - [ ] Pedir referidos a cada clienta
 - [ ] Cada 3 meses: evaluar si dejar Uber gradualmente

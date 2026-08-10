@@ -49,7 +49,7 @@
 | Contexto | Nombre sugerido |
 |----------|----------------|
 | **Sección en depiflash.paragu-ai.com** | "Programa de Reafirmación" (sutil, profesional) |
-| **WhatsApp Business / Flyers en Uber** | "DepiFlash Inclusivo" (mantiene marca, comunica) |
+| **Messaging Business / Flyers en Uber** | "DepiFlash Inclusivo" (mantiene marca, comunica) |
 | **Organizaciones LGBTQ+ / Boca a boca** | "DepiFlash Reafirma" o "Afirma.PY" |
 | **Marketing en Instagram** | "DepiFlash para Vos" (más viral, menos político) |
 

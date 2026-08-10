@@ -2,7 +2,7 @@
 
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppFloat } from "@/components/whatsapp-float"
+import { MessagingFloat } from "@/components/messaging-float"
 import { MobileCta } from "@/components/mobile-cta"
 import { CtaBanner } from "@/components/cta-banner"
 import raw from "@/content/es.json"
@@ -30,9 +30,9 @@ export default function FaqPage() {
           ))}
         </div>
       </div>
-      <CtaBanner title="¿Otra pregunta?" description="Escribime por WhatsApp y te respondo al toque" ctaLabel="Consultar" ctaHref={`https://wa.me/${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Tengo%20una%20consulta%20sobre%20depilaci%C3%B3n%20l%C3%A1ser`} />
+      <CtaBanner title="¿Otra pregunta?" description="Escribime por Messaging y te respondo al toque" ctaLabel="Consultar" ctaHref={`tel:+${content.phone.replace(/[^0-9]/g, "")}?text=Hola!%20Tengo%20una%20consulta%20sobre%20depilaci%C3%B3n%20l%C3%A1ser`} />
       <Footer phone={content.phone} />
-      <WhatsAppFloat phone={content.whatsapp} message="Hola! Tengo una consulta" />
+      <MessagingFloat phone={content.messaging} message="Hola! Tengo una consulta" />
       <MobileCta phone={content.phone} />
     </>
   )

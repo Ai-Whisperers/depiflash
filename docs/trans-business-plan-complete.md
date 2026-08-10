@@ -190,7 +190,7 @@ Cuando la demanda lo justifique (>20 sesiones/semana):
 | IPL barba + patillas + mentón + cuello | Delineado de cejas |
 | Gel conductor + lentes de protección | Skincare post con productos |
 | Limpieza pre-sesión | Productos para llevar a casa |
-| Recomendaciones post por WhatsApp | |
+| Recomendaciones post por Messaging | |
 
 ---
 
@@ -202,13 +202,13 @@ Cuando la demanda lo justifique (>20 sesiones/semana):
 |-------|-----------|-----------|---------|
 | **Uber (flyers en auto)** | ⭐⭐⭐ | Gs. 200K (tarjetas) | Dejar en asiento trasero con QR |
 | **Instagram** | ⭐⭐⭐ | $0 (orgánico) | Hashtags: #MujeresTransPY #DepilacionAfirmativa |
-| **SOMOSGAY** | ⭐⭐⭐ | $0 | Contactar vía WhatsApp |
+| **SOMOSGAY** | ⭐⭐⭐ | $0 | Contactar vía Messaging |
 | **Líder comunitaria** | ⭐⭐⭐ | 1 sesión gratis | Prueba gratuita → recomendación |
 | **Facebook Groups** | ⭐⭐ | $0 | Grupos de belleza/estética PY |
 | **Eventos LGBTQ+** | ⭐⭐ | $0 | Asistir, repartir tarjetas |
 | **Boca a boca** | ⭐⭐ | $0 | El mejor canal a largo plazo |
 
-### Mensajes de WhatsApp Preparados
+### Mensajes de Messaging Preparados
 
 **Cliente nueva preguntando:**
 > "Hola! Sí, ofrezco depilación IPL a domicilio. También tengo un programa especial de reafirmación de género con precios accesibles para depilación facial. ¿Querés que te cuente más? Sin compromiso."
@@ -254,8 +254,8 @@ Cuando la demanda lo justifique (>20 sesiones/semana):
 
 ### Datos de Clientes
 
-**Dónde guardarlos:** WhatsApp + Google Sheets
-**Campos de la planilla:** Nombre, WhatsApp, Zona a tratar, N° sesiones, Pagos, Próxima fecha
+**Dónde guardarlos:** Messaging + Google Sheets
+**Campos de la planilla:** Nombre, Messaging, Zona a tratar, N° sesiones, Pagos, Próxima fecha
 
 ### Zona de Cobertura
 
@@ -326,7 +326,7 @@ Dan se adapta al horario de la clienta. Recomendado: coordinar día y hora espec
 
 - No guardar fotos sin permiso escrito
 - No compartir información entre clientas
-- Ofrecer pseudónimo en WhatsApp
+- Ofrecer pseudónimo en Messaging
 - El descuento se aplica por auto-identificación (NO pedir documentos)
 
 ---
@@ -337,7 +337,7 @@ Dan se adapta al horario de la clienta. Recomendado: coordinar día y hora espec
 
 | Día | Tareas | Checklist |
 |-----|--------|-----------|
-| **1** | ✅ Leer guía Fitzpatrick. ✅ Probar JD TM016 nivel 8. ✅ Preparar 4 mensajes WhatsApp. | [ ] |
+| **1** | ✅ Leer guía Fitzpatrick. ✅ Probar JD TM016 nivel 8. ✅ Preparar 4 mensajes Messaging. | [ ] |
 | **2** | [ ] Agregar "Programa de Reafirmación" en el sitio web / es.json. [ ] Agregar FAQ. [ ] Publicar historia en IG. | [ ] |
 | **3** | [ ] Mandar a hacer 200 tarjetas. [ ] Conseguir 20 tarjetas para el auto. [ ] Elegir frase de Uber. | [ ] |
 
@@ -345,9 +345,9 @@ Dan se adapta al horario de la clienta. Recomendado: coordinar día y hora espec
 
 | Día | Tareas | Checklist |
 |-----|--------|-----------|
-| **4** | [ ] Contactar SOMOSGAY por WhatsApp. [ ] Publicar en 2 grupos de FB. [ ] Seguir 10 cuentas trans-friendly en IG. | [ ] |
+| **4** | [ ] Contactar SOMOSGAY por Messaging. [ ] Publicar en 2 grupos de FB. [ ] Seguir 10 cuentas trans-friendly en IG. | [ ] |
 | **5** | [ ] Ofrecer 1ra sesión gratis a 1-2 amigas/conocidas. [ ] Hacer sesión de prueba. [ ] Ajustar protocolo. | [ ] |
-| **6-7** | [ ] Tener planilla Google Sheets lista. [ ] Confirmar precios en WhatsApp Business. | [ ] |
+| **6-7** | [ ] Tener planilla Google Sheets lista. [ ] Confirmar precios en Messaging Business. | [ ] |
 
 ### Lanzamiento (Días 8-14)
 

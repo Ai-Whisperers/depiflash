@@ -24,7 +24,7 @@
 ```
                         ┌──────────────────────────────────┐
                         │       DEPIFLASH ADS ENGINE       │
-                        │  (Todo lleva QR → Web + WhatsApp) │
+                        │  (Todo lleva QR → Web + Messaging) │
                         └──────────────────────────────────┘
                                      │
             ┌────────────────────────┼────────────────────────┐
@@ -38,7 +38,7 @@
     │• Posters      │      │• Instagram Stories│      │  en Uber       │
     │• Calcomanía   │      │• Facebook Feed    │      │• Referidos     │
     │• Stickers     │      │• Google Search    │      │  de clientas   │
-    │• Lonas/Stand  │      │• WhatsApp Status  │      │• Tarjetas      │
+    │• Lonas/Stand  │      │• Messaging Status  │      │• Tarjetas      │
     │               │      │• Google My Bus.   │      │  (dejan con    │
     └───────────────┘      └──────────────────┘      │  conocidas)    │
                                                      └────────────────┘
@@ -245,7 +245,7 @@ Se usa solo para: ferias de belleza, eventos LGBTQ+, expo universitarias.
 [2-8s] Dan tocando el cabezal: "No. Sentís calor nomas."
 [8-15s] Corte a sesión real: el dispositivo deslizándose en una axila
 [15-20s] Dan mirando a cámara: "Voy a tu casa. 30 minutos. Sin dolor."
-[20-25s] Texto en pantalla: "Escribime por WhatsApp. Link en bio ⬇️"
+[20-25s] Texto en pantalla: "Escribime por Messaging. Link en bio ⬇️"
 ```
 
 **Tipo de Reel #2: Hook = Comparación Costo**
@@ -431,7 +431,7 @@ GRUPO 1: [General]
     Título: En Tu Casa • 30 Minutos
     Título: Resultados Desde la 1ra Sesión
     Desc: Depilación láser IPL sin moverte. Gs. 50.000/sesión.
-          Asunción y Gran Asunción. Escribime por WhatsApp.
+          Asunción y Gran Asunción. Escribime por Messaging.
 
 GRUPO 2: [Por Zona]
   Palabras clave:
@@ -446,7 +446,7 @@ GRUPO 2: [Por Zona]
     Título: IPL a Domicilio en Asunción
     Título: Resultados Permanentes
     Desc: Depilación láser IPL por zona. Precios desde Gs. 50.000.
-          Voy a tu casa. Sin dolor. Escribime por WhatsApp.
+          Voy a tu casa. Sin dolor. Escribime por Messaging.
 
 GRUPO 3: [Trans / Reafirmación]
   Palabras clave:
@@ -461,7 +461,7 @@ GRUPO 3: [Trans / Reafirmación]
     Título: Ambiente Seguro y Respetuoso
     Desc: Depilación IPL facial con precios especiales.
           Primera sesión gratis para primeras 10 personas.
-          Consultame por WhatsApp sin compromiso.
+          Consultame por Messaging sin compromiso.
 ```
 
 ---
@@ -476,7 +476,7 @@ GRUPO 3: [Trans / Reafirmación]
 4. Área de servicio: Asunción, San Lorenzo, Fernando de la Mora, Luque, Lambaré, Mariano Roque Alonso, Ñemby
 5. NO poner dirección física (es servicio móvil)
 6. Teléfono: +595 974 202 025
-7. WhatsApp: +595 974 202 025
+7. Messaging: +595 974 202 025
 8. Horario: Lunes a Sábado 9:00-20:00
 9. Sitio web: https://depiflash.paragu-ai.com
 10. Fotos: Subir las primeras 5 fotos del equipo, la máquina, Dan
@@ -484,11 +484,11 @@ GRUPO 3: [Trans / Reafirmación]
 **Publicaciones semanales en Google My Business:**
 ```
 Lunes: "Arrancamos la semana con horarios disponibles en Villa Morra ⚡"
-            + botón "Reservar por WhatsApp"
+            + botón "Reservar por Messaging"
 Miércoles: "Promo de mitad de semana: 10% OFF en sesión individual"
             + botón "Reservar"
 Viernes: "Fin de semana libre de vello 🌸 Agendá tu sesión"
-            + botón "WhatsApp"
+            + botón "Messaging"
 ```
 
 **Pedir reseñas (después de 4ta sesión exitosa):**
@@ -504,7 +504,7 @@ Son 2 minutos. Gracias! 🙏
 
 ---
 
-### 3G. WHATSAPP STATUS — Prioridad #7 Digital (GRATIS)
+### 3G. MESSAGING STATUS — Prioridad #7 Digital (GRATIS)
 
 **Formato:** Imagen 9:16 o video 15s, con texto
 **Frecuencia:** 3-5 estados por semana
@@ -518,7 +518,7 @@ Son 2 minutos. Gracias! 🙏
    primer turno 🏃‍♂️"
 
 📸 RESULTADO: "3 sesiones de diferencia. Resultado real.
-   Consultame por WhatsApp 😊"
+   Consultame por Messaging 😊"
 
 🎓 ESTUDIANTES: "Recordá: presentando tu carnet de estudiante
    tenés 15% OFF en todas las sesiones 📚✨"
@@ -530,7 +530,7 @@ Son 2 minutos. Gracias! 🙏
 **Cada estado debería tener:**
 - Una imagen llamativa (puede ser la misma que en Instagram)
 - Texto corto con CALL TO ACTION claro
-- El QR NO va acá (no se puede escanear en WhatsApp Status)
+- El QR NO va acá (no se puede escanear en Messaging Status)
 - En su lugar: "Escribime al privado" o el link directo de WA
 
 ---
@@ -613,14 +613,14 @@ GOOGLE
 | **Miércoles** | 19:00-21:00 | Reel resultado/testimonio + Facebook post |
 | **Jueves** | 12:00-13:00 | Oferta relámpago para el finde |
 | **Viernes** | 17:00-19:00 | "Estoy en [zona], 2 horarios libres" |
-| **Sábado** | 10:00-12:00 | Historias de sesiones en vivo + WhatsApp estado |
+| **Sábado** | 10:00-12:00 | Historias de sesiones en vivo + Messaging estado |
 | **Domingo** | 18:00-20:00 | "Agendá tu semana" — planificar |
 
 ### Timing Diario (Mejores horas para publicar)
 
 | Hora | Plataforma | Por qué |
 |------|-----------|--------|
-| **7:00-8:00** | WhatsApp estado | La gente revisa al despertar |
+| **7:00-8:00** | Messaging estado | La gente revisa al despertar |
 | **8:00-9:00** | Instagram Stories | Trayecto al trabajo |
 | **12:00-13:00** | Instagram Feed/Reels | Hora de almuerzo, mucho tráfico |
 | **17:00-18:00** | Instagram Stories | Salida del trabajo/estudio |
@@ -653,7 +653,7 @@ MENSUAL:
 
 #### Paso 1: Crear Campaña
 ```
-Objetivo: Tráfico (llevar a WhatsApp) o Conversiones (si tiene pixel configurado)
+Objetivo: Tráfico (llevar a Messaging) o Conversiones (si tiene pixel configurado)
 Compra: Subasta
 Presupuesto: Diario (empezar con $3/día = Gs. 24,000/día)
 ```
@@ -763,7 +763,7 @@ Métricas a revisar CADA 3 DÍAS:
      - Regular: $0.50-1.00
      - Malo: > $1.00
 
-  ✅ Clics a WhatsApp (si usás link de WA)
+  ✅ Clics a Messaging (si usás link de WA)
      - Ideal: > 5 clics/día con $3/día
 
   ✅ Engagement (likes, comments, shares)
@@ -813,7 +813,7 @@ Métricas a revisar CADA 3 DÍAS:
 | QR # | Destino | Cuándo usarlo |
 |------|---------|--------------|
 | QR-Web | https://depiflash.paragu-ai.com | Tarjetas, posters, flyers, lona |
-| QR-WA | https://wa.me/595974202025 | Stickers chicos, calcomanía de auto |
+| QR-WA | tel:+595974202025 | Stickers chicos, calcomanía de auto |
 | QR-Precios | https://depiflash.paragu-ai.com/servicios | Flyers, posters |
 | QR-Trans | https://depiflash.paragu-ai.com#reafirmacion | Material para comunidad LGBTQ+ |
 
@@ -862,7 +862,7 @@ o
 |-----------|-------------|--------------|--------------|
 | Instagram Ads | $3 (Gs. 24,000) | $21 | $90 (Gs. 700,000) |
 | Google Ads | $3 (Gs. 24,000) | $21 | $90 (Gs. 700,000) |
-| WhatsApp Status | GRATIS | GRATIS | GRATIS |
+| Messaging Status | GRATIS | GRATIS | GRATIS |
 | Google My Business | GRATIS | GRATIS | GRATIS |
 | Facebook Groups | GRATIS | GRATIS | GRATIS |
 | **Total Digital/mes** | **$6/día** | **$42/sem** | **$180/mes (Gs. 1,400,000)** |
@@ -902,7 +902,7 @@ DÍA 9: Publicar primer Reel (hook: "¿Duele?")
 DÍA 10: Publicar primer post de Feed (antes/después)
 DÍA 11: Crear Google My Business + primeras fotos
 DÍA 12: Unirse a 5 grupos de Facebook y presentarse
-DÍA 13: Publicar estado de WhatsApp: "Arrancó DepiFlash ⚡"
+DÍA 13: Publicar estado de Messaging: "Arrancó DepiFlash ⚡"
 DÍA 14: REVISAR métricas de ads. Ajustar targeting si es necesario.
 ```
 
@@ -923,7 +923,7 @@ DÍA 21: Publicar Reel #2 (hook: "¿Cera vs IPL?")
 DÍA 22: Revisar métricas de ads. Pausar lo que no funciona. Duplicar lo que sí.
 DÍA 23: Publicar Reel #3 (hook: testimonio de clienta real con permiso)
 DÍA 24: Ir a 2 universidades más (UniNorte, Americana)
-DÍA 25: Mandar difusión de WhatsApp a contactos (promo de lanzamiento)
+DÍA 25: Mandar difusión de Messaging a contactos (promo de lanzamiento)
 DÍA 26: Publicar en 2 grupos de Facebook (con oferta)
 DÍA 27: REVISAR: cuántas tarjetas se entregaron, cuántos leads se generaron
 DÍA 28: Contactar a SOMOSGAY para presentar el Programa de Reafirmación
@@ -942,7 +942,7 @@ DÍA 30: Balance del mes: ¿cuánto se gastó? ¿cuánto se ganó? Ajustar plan.
 | Meta Ads Manager | https://business.facebook.com/adsmanager/ |
 | Google Ads | https://ads.google.com/ |
 | Google My Business | https://business.google.com/ |
-| Link directo WhatsApp | https://wa.me/595974202025 |
+| Link directo Messaging | tel:+595974202025 |
 | Sitio web DepiFlash | https://depiflash.paragu-ai.com |
 | Instagram | https://instagram.com/depiflash.py |
 

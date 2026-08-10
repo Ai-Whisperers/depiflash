@@ -14,7 +14,7 @@ export interface SiteContent {
   navigation: { items: { label: string; href: string }[] }
   home: { hero: any; features: any[]; testimonials: any[]; productCatalog?: any }
   faq?: { items: { question: string; answer: string }[] }
-  whatsapp?: { businessNumber: string; defaultMessage: string }
+  messaging?: { businessNumber: string; defaultMessage: string }
   analytics?: { ga4?: string }
   [key: string]: any
 }

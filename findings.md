@@ -30,8 +30,8 @@
 
 | Value | Found In | Replace With |
 |-------|----------|-------------|
-| +595974202025 | Multiple places (CTA, WhatsApp, header, footer) | content.whatsapp |
-| WhatsApp links with prefilled messages | Many CTAs | Construct from content.whatsapp + content.whatsappMessage |
+| +595974202025 | Multiple places (CTA, Messaging, header, footer) | content.messaging |
+| Messaging links with prefilled messages | Many CTAs | Construct from content.messaging + content.messagingMessage |
 | https://www.instagram.com/depiflash.py | footer, contacto | content.instagram ✅ DONE |
 | info@depiflash.com.py | footer, contacto | content.email |
 | Asunción y Gran Asunción | Multiple text blocks | content.coverage |

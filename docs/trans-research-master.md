@@ -12,7 +12,7 @@
 
 ### Clínicas de IPL/Láser en Asunción (mapeo completo)
 
-| # | Nombre | Dirección | Tipo | Precio facial | Precio corporal | WhatsApp/Contacto |
+| # | Nombre | Dirección | Tipo | Precio facial | Precio corporal | Messaging/Contacto |
 |---|--------|-----------|------|--------------|----------------|-------------------|
 | 1 | **DepilArte** | Asunción | Láser (Elysion Pro 2000W) | Gs. 49,000-90,000 (mini/pink) / Gs. 160,000 (rostro completo) | Gs. 115,000-220,000 |  (precios scaneados del sitio) |
 | 2 | **Depyless** | Asunción | Láser médico | ~Gs. 150,000-250,000 | ~Gs. 200,000-350,000 | depyless.com |
@@ -118,7 +118,7 @@
 | Organización | Foco | Contacto | Accesibilidad |
 |-------------|------|----------|--------------|
 | **PANAMBI** | Trans, Travestis, Transexuales | panambi.org.py / Facebook | Dan menciona "difícil de contactar" |
-| **SOMOSGAY** | LGBTQ+ general | somosgay.org / WhatsApp activo | ✅ "Más fácil de contactar" |
+| **SOMOSGAY** | LGBTQ+ general | somosgay.org / Messaging activo | ✅ "Más fácil de contactar" |
 | **TEDIC** | Derechos digitales + programa trans | tedic.org | Dan no tiene contacto |
 | **Kuña Mbarete** | Feminista / trans | kuñambarete.org | Dan no conoce |
 | **Fundación Vencer** | VIH + diversidad | fundacionvencer.org.py | No evaluado |
@@ -130,7 +130,7 @@
 - Varias referentes en SOMOSGAY
 
 ### Cómo contactar SOMOSGAY (prioridad #1)
-1. WhatsApp: número disponible en su sitio web somosgay.org
+1. Messaging: número disponible en su sitio web somosgay.org
 2. Instagram: @somosgayparaguay
 3. Facebook: SOMOSGAY Paraguay
 4. Email: a través del formulario web
@@ -140,7 +140,7 @@
 - **Lugares:** Zona del Paseo Carmelitas, bares en Villa Morra
 - **Eventos:** Marcha del Orgullo (junio), eventos de SOMOSGAY y PANAMBI
 
-### Grupos de Telegram / WhatsApp trans Paraguay
+### Grupos de Telegram / Messaging trans Paraguay
 - Existen grupos privados de comunidad trans (invitación necesaria)
 - Canales de Telegram de SOMOSGAY y PANAMBI
 
@@ -206,10 +206,10 @@
 ### Canales de contacto recomendados
 | Canal | Prioridad | Táctica |
 |-------|-----------|---------|
-| SOMOSGAY WhatsApp | ⭐⭐⭐ | Contactar, ofrecer descuento comunitario |
+| SOMOSGAY Messaging | ⭐⭐⭐ | Contactar, ofrecer descuento comunitario |
 | Instagram | ⭐⭐⭐ | Contenido orgánico, hashtags sutiles |
 | Uber flyers | ⭐⭐ | Dejar en asiento trasero con precio y QR |
-| Grupos WhatsApp trans | ⭐⭐ | Referidos de líder comunitaria |
+| Grupos Messaging trans | ⭐⭐ | Referidos de líder comunitaria |
 | Organizaciones LGBTQ+ | ⭐⭐ | Flyers físicos en eventos |
 | TikTok | ⭐ | Si Dan quiere, contenido educativo |
 
@@ -316,7 +316,7 @@
 ### Privacidad de datos
 - No guardar fotos sin permiso explícito y por escrito
 - No compartir información de clientas entre sí
-- En WhatsApp: no poner nombre real en contactos sin permiso
+- En Messaging: no poner nombre real en contactos sin permiso
 - Ofrecer pseudónimo si prefiere
 
 ### Tasa de abandono de tratamiento
@@ -326,10 +326,10 @@
   - Dificultades económicas
   - Efecto de hormonas (si el vello se reduce naturalmente, dejan IPL)
 - **Cómo reducir abandono:**
-  - WhatsApp de seguimiento automático a los 3 días post-sesión
+  - Messaging de seguimiento automático a los 3 días post-sesión
   - Recordatorio de próxima sesión a los 20 días
   - Descuento por fidelidad (ej: después de 6 sesiones, 10% off adicional)
-  - Crear mini-comunidad (grupo de WhatsApp de clientas trans, opcional)
+  - Crear mini-comunidad (grupo de Messaging de clientas trans, opcional)
 
 ---
 
@@ -358,7 +358,7 @@
 
 | Día | Acción |
 |-----|--------|
-| **1-3** | ✅ Contactar SOMOSGAY por WhatsApp |
+| **1-3** | ✅ Contactar SOMOSGAY por Messaging |
 | **1-3** | ✅ Definir precios finales (barba Gs. 150K, descuento 20%) |
 | **1-3** | ✅ Actualizar es.json con nuevo servicio y FAQ |
 | **4-7** | ❓ Esperar respuesta de SOMOSGAY |

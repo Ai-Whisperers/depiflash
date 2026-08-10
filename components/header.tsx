@@ -31,9 +31,9 @@ export function Header({ phone }: { phone: string }) {
               {item.label}
             </Link>
           ))}
-          <a href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}`} target="_blank" rel="noopener noreferrer"
+          <a href={`tel:+${phone.replace(/[^0-9]/g, "")}`} target="_blank" rel="noopener noreferrer"
             className="ml-2 rounded-lg bg-[#E8A0BF] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#D484A8]">
-            WhatsApp
+            Messaging
           </a>
         </nav>
 
@@ -68,11 +68,11 @@ export function Header({ phone }: { phone: string }) {
                 {item.label}
               </Link>
             ))}
-            <a href={`https://wa.me/${phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20informaci%C3%B3n`}
+            <a href={`tel:+${phone.replace(/[^0-9]/g, "")}?text=Hola!%20Quiero%20informaci%C3%B3n`}
               target="_blank" rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="mt-2 block rounded-lg bg-[#E8A0BF] px-3 py-3 text-center text-base font-semibold text-white transition-all hover:bg-[#D484A8]">
-              WhatsApp
+              Messaging
             </a>
           </nav>
         </div>

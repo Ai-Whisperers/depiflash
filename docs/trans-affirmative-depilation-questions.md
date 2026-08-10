@@ -134,7 +134,7 @@
 ### 14. ¿Cómo llegar a mujeres trans sin poner "para trans" en el cartel?
 
 - **a) Flyers físicos en organizaciones LGBTQ+** — bajo la mesa
-- **b) Grupos de Telegram / WhatsApp trans** — boca a boca digital
+- **b) Grupos de Telegram / Messaging trans** — boca a boca digital
 - **c) Referidos de una líder comunitaria** — que ella pruebe gratis y recomiende
 - **d) Publicación sutil en Instagram** — sin etiquetas explícitas, pero usando hashtags específicos
 - **e) Combinación de varias**
@@ -164,7 +164,7 @@
 - **a) Totalmente visible** — sección en la web, redes, todo público
 - **b) Semi-público** — en la web pero sin destacarlo, que se encuentre si buscan
 - **c) Solo boca a boca** — nada en internet
-- **d) Casi invisible** — solo por WhatsApp preguntando directamente
+- **d) Casi invisible** — solo por Messaging preguntando directamente
 - **e) Otro:** _________________________________
 
 ### 18. ¿Pensaste en la reacción de clientas actuales si se enteran que atendés trans?
@@ -203,5 +203,5 @@
 | Precio barba | Gs. 150,000/sesión (paquete 10: Gs. 1,200,000) |
 | Descuento trans | 20% en barba, auto-identificación |
 | Marketing | Boca a boca comunitario + líder trans |
-| Visibilidad | Semi-público (web + WhatsApp) |
+| Visibilidad | Semi-público (web + Messaging) |
 | Primer paso | 5 clientas de prueba → feedback → ajustar → lanzar |

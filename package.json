@@ -19,7 +19,7 @@
     "@ai-whisperers/ui": "^0.4.1",
     "@ai-whisperers/ui-extras": "^0.3.0",
     "@ai-whisperers/seo": "^0.2.1",
-    "@ai-whisperers/whatsapp": "^0.3.0",
+    "@ai-whisperers/messaging": "^0.3.0",
     "@ai-whisperers/theme": "^0.3.0",
     "@ai-whisperers/content": "^0.3.0"
   },

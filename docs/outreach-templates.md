@@ -6,7 +6,7 @@
 
 ## 1. GIMNASIOS (comisión por referido)
 
-### WhatsApp Inicial
+### Messaging Inicial
 ```
 Hola! 👋 Soy Dan de DepiFlash.
 Ofrezco depilación láser IPL a domicilio en Asunción.
@@ -30,7 +30,7 @@ Sin compromiso, solo si te sirve. Abrazo!
 
 ## 2. PELUQUERÍAS / SALONES DE BELLEZA
 
-### WhatsApp Inicial
+### Messaging Inicial
 ```
 Hola! Trabajo con depilación láser IPL a domicilio.
 Paso seguido por [zona] y veo que tenés un local lindo.
@@ -51,7 +51,7 @@ Muchas de tus clientas seguro también se depilan.
 ¿Te interesaría dejar unas tarjetas mías acá?
 Por cada una que venga de tu parte, coordinamos algo.
 
-Mi WhatsApp es [número], cualquier cosa me escribís.
+Mi Messaging es [número], cualquier cosa me escribís.
 ¡Gracias!
 ```
 
@@ -59,7 +59,7 @@ Mi WhatsApp es [número], cualquier cosa me escribís.
 
 ## 3. CLÍNICAS DE ESTÉTICA (derivación mutua)
 
-### WhatsApp Inicial
+### Messaging Inicial
 ```
 Hola! Soy Dan de DepiFlash — depilación IPL a domicilio.
 Veo que ofrecen [masajes/faciales/etc], muy lindo su trabajo.
@@ -87,7 +87,7 @@ En tu casa. 30 minutos. Resultados desde la primera sesión.
 #DepiFlash #DepilaciónAsunción #Estudiantes
 ```
 
-### Texto para grupo de WhatsApp de estudiantes
+### Texto para grupo de Messaging de estudiantes
 ```
 Gente! 👋 Les comparto esto por si a alguien le sirve:
 Depilación láser IPL a domicilio en Asunción.
@@ -103,12 +103,12 @@ Pregunten sin compromiso 😊
 
 ## 5. EVANGELICAL / IGLESIAS / GRUPOS COMUNITARIOS
 
-### WhatsApp a líder de grupo
+### Messaging a líder de grupo
 ```
 Hola! Soy Dan de DepiFlash. Trabajo con depilación láser
 IPL a domicilio en Asunción.
 
-¿Tenés grupo de WhatsApp de [mujeres/vecinas/comunidad]?
+¿Tenés grupo de Messaging de [mujeres/vecinas/comunidad]?
 Si me dejás compartir mi servicio ahí, ofrezco un descuento
 especial para las integrantes del grupo, y si alguna reserva,
 te reconozco una comisión.
@@ -135,7 +135,7 @@ Sin compromiso, solo si te copa. ¡Avísame!
 
 ## 7. EVENTOS LGBTQ+ / SOMOSGAY
 
-### WhatsApp a SOMOSGAY
+### Messaging a SOMOSGAY
 ```
 Hola! Mi nombre es Dan y tengo DepiFlash — un servicio de
 depilación IPL a domicilio en Asunción.
@@ -161,7 +161,7 @@ Si tenés una amiga/familiar que quiera probar:
 🙋‍♀️ VOS: 20% OFF en tu próxima sesión
 👩‍👧‍👧 ELLA: 20% OFF en su primera sesión
 
-Solo decime su nombre y WhatsApp y le hablo yo.
+Solo decime su nombre y Messaging y le hablo yo.
 Sin compromiso 😊
 ```
 

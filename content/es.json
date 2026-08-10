@@ -2,16 +2,16 @@
   "siteName": "DepiFlash",
   "businessName": "DepiFlash",
   "tagline": "Depilación láser IPL a domicilio en Asunción",
-  "whatsapp": "+595972780800",
-  "whatsappLink": "https://wa.me/595972780800?text=Hola!%20Quiero%20info%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
+  "messaging": "+595972780800",
+  "messagingLink": "tel:+595972780800?text=Hola!%20Quiero%20info%20sobre%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
   "phone": "+595972780800",
   "email": "info@depiflash.com.py",
   "instagram": "https://www.instagram.com/depiflash.py",
   "coverage": "Asunción y Gran Asunción (Fernando de la Mora, San Lorenzo, Luque, Lambaré, Mariano Roque Alonso, Ñemby)",
   "navigation": {
     "businessName": "DepiFlash",
-    "ctaText": "Reservar por WhatsApp",
-    "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
+    "ctaText": "Reservar por Messaging",
+    "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL%20a%20domicilio",
     "items": [
       {
         "label": "Inicio",
@@ -38,13 +38,13 @@
   "home": {
     "seo": {
       "title": "DepiFlash — Depilación Láser IPL a Domicilio en Asunción",
-      "description": "Depilación láser IPL a domicilio en Asunción y Gran Asunción. Sin moverte de tu casa. Resultados desde la primera sesión. WhatsApp +595 974 202 025."
+      "description": "Depilación láser IPL a domicilio en Asunción y Gran Asunción. Sin moverte de tu casa. Resultados desde la primera sesión. Messaging +595 974 202 025."
     },
     "hero": {
       "headline": "Depilación láser IPL en tu casa",
       "subheadline": "Sin moverte, sin esperas, sin vergüenza. Voy a tu domicilio con el equipo IPL y en 30 minutos estás lista. Asunción y Gran Asunción.",
       "ctaPrimaryText": "Reservar sesión",
-      "ctaPrimaryHref": "https://wa.me/595972780800?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL",
+      "ctaPrimaryHref": "tel:+595972780800?text=Hola!%20Quiero%20reservar%20una%20sesi%C3%B3n%20de%20depilaci%C3%B3n%20l%C3%A1ser%20IPL",
       "ctaSecondaryText": "Ver precios",
       "ctaSecondaryHref": "/servicios"
     },
@@ -84,7 +84,7 @@
         {
           "number": 1,
           "title": "Reservá",
-          "description": "Escribime por WhatsApp, decime qué zona querés tratarte y elegimos día y horario. Te confirmo al toque.",
+          "description": "Escribime por Messaging, decime qué zona querés tratarte y elegimos día y horario. Te confirmo al toque.",
           "icon": "MessageCircle"
         },
         {
@@ -109,7 +109,7 @@
     },
     "pricing": {
       "title": "Precios por sesión",
-      "subtitle": "También ofrezco paquetes con descuento. Consultame por WhatsApp.",
+      "subtitle": "También ofrezco paquetes con descuento. Consultame por Messaging.",
       "note": "Los precios incluyen desplazamiento dentro de Asunción y Gran Asunción",
       "zones": [
         {
@@ -253,7 +253,7 @@
         },
         {
           "question": "¿Ofrecen descuentos especiales?",
-          "answer": "Sí, tenemos un programa de reafirmación de género con precios especiales para depilación facial. Escribinos por WhatsApp y te contamos sin compromiso."
+          "answer": "Sí, tenemos un programa de reafirmación de género con precios especiales para depilación facial. Escribinos por Messaging y te contamos sin compromiso."
         },
         {
           "question": "¿Contraindicaciones?",
@@ -314,7 +314,7 @@
   "contacto": {
     "seo": {
       "title": "Contacto | DepiFlash — Depilación IPL a Domicilio en Asunción",
-      "description": "Contactanos por WhatsApp, email o Instagram para coordinar tu primera sesión de depilación láser IPL a domicilio en Asunción."
+      "description": "Contactanos por Messaging, email o Instagram para coordinar tu primera sesión de depilación láser IPL a domicilio en Asunción."
     }
   },
   "servicios": {
@@ -326,7 +326,7 @@
   "comoFunciona": {
     "seo": {
       "title": "Cómo Funciona | DepiFlash — Depilación IPL a Domicilio en Casa",
-      "description": "En 4 pasos: contactás por WhatsApp, elegís día y horario, me recibís en tu casa y en 30-45 minutos tenés tu sesión de depilación IPL."
+      "description": "En 4 pasos: contactás por Messaging, elegís día y horario, me recibís en tu casa y en 30-45 minutos tenés tu sesión de depilación IPL."
     }
   },
   "privacidad": {
@@ -338,7 +338,7 @@
   "reafirmacion": {
     "title": "Programa de Reafirmación",
     "description": "Consultá por nuestro programa de reafirmación de género. Depilación facial con precios especiales (20% de descuento) y un ambiente de respeto. Primera sesión gratis para las primeras 10 personas.",
-    "ctaLabel": "Consultar por WhatsApp",
-    "ctaHref": "https://wa.me/595974202025?text=Hola!%20Quiero%20info%20sobre%20el%20programa%20de%20reafirmaci%C3%B3n"
+    "ctaLabel": "Consultar por Messaging",
+    "ctaHref": "tel:+595974202025?text=Hola!%20Quiero%20info%20sobre%20el%20programa%20de%20reafirmaci%C3%B3n"
   }
 }

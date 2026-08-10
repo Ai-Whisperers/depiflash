@@ -9,7 +9,7 @@
 |------|----------|
 | Nombre del servicio | **DepiFlash — Servicio de Reafirmación** |
 | Presentación | **Dan** para todas (mismo nombre) |
-| Foto WhatsApp | Logo DepiFlash |
+| Foto Messaging | Logo DepiFlash |
 | Máquina | JD TM016 para empezar |
 | Nivel máximo | Nivel 8, dolor soportable |
 | Fitzpatrick | Necesita guía rápida |
@@ -22,7 +22,7 @@
 | Web | Texto profesional e inclusivo |
 | Zonas que ofrece | Todas las faciales + corporales (excepto zona íntima, rostro completo en 1 sesión, espalda completa por tiempo) |
 | Horarios | Se adapta a la clienta |
-| Datos clientas | WhatsApp + Google Sheets |
+| Datos clientas | Messaging + Google Sheets |
 | Seguimiento | Sí, quiere sistema automático |
 | Objetivo 3 meses | 10 clientas estables / 30% ingresos |
 | Dedicación | 10-20h/semana |
@@ -42,7 +42,7 @@ Analizando modelos de negocio de clínicas láser en PY y el formato a domicilio
 | ✅ Aplicación IPL en barba + patillas + mentón + cuello (zona completa) | Zona completa, no dividida |
 | ✅ Gel conductor + lentes de protección | Insumos incluidos |
 | ✅ Skin care pre-sesión (limpieza de la zona con algodón/alcohol) | Higiene básica |
-| ✅ Recomendaciones post-sesión impresas o por WhatsApp | Cuidados posteriores |
+| ✅ Recomendaciones post-sesión impresas o por Messaging | Cuidados posteriores |
 | ❌ NO incluye delineado (cejas) | Servicio aparte |
 | ❌ NO incluye skincare post-sesión con productos | Solo recomendaciones |
 | ❌ NO incluye productos para llevar a casa | Solo el servicio |
@@ -88,12 +88,12 @@ Basado en análisis del sitio actual (6 páginas estáticas, contenido en es.jso
 1. **es.json** → Agregar sección "reafirmacion" con texto sutil en home y servicios
 2. **/servicios** → Agregar subsección "Programa de Reafirmación" debajo de la tabla de precios
 3. **FAQ** → Agregar pregunta "¿Ofrecen descuentos especiales?" con respuesta sobre el programa
-4. **WhatsApp float + CTA** → Actualizar el mensaje predefinido de WhatsApp
+4. **Messaging float + CTA** → Actualizar el mensaje predefinido de Messaging
 
 ### Texto a usar:
 - **Título sección:** "Programa de Reafirmación"
 - **Descripción:** "Consultá por nuestro programa de reafirmación de género — depilación facial con precios especiales y ambiente de respeto."
-- **FAQ:** "Sí, tenemos un programa de acompañamiento con precios especiales. Escribinos por WhatsApp para más información."
+- **FAQ:** "Sí, tenemos un programa de acompañamiento con precios especiales. Escribinos por Messaging para más información."
 
 ---
 
@@ -103,7 +103,7 @@ Basado en análisis del sitio actual (6 páginas estáticas, contenido en es.jso
 - [x] Leer guía de tipos de piel Fitzpatrick (adjunta abajo)
 - [x] Probar JD TM016 en nivel 8 en vos mismo (ya lo hiciste ✅)
 - [x] Definir protocolo: qué decir y qué hacer en cada sesión
-- [x] Preparar 3 mensajes de WhatsApp para diferentes situaciones
+- [x] Preparar 3 mensajes de Messaging para diferentes situaciones
 
 ### DÍA 2 — Contenido + sitio web
 - [ ] Agregar sección "Programa de Reafirmación" en es.json
@@ -115,12 +115,12 @@ Basado en análisis del sitio actual (6 páginas estáticas, contenido en es.jso
 - [ ] Mandar a hacer 200 tarjetas con:
   - "DepiFlash — Servicio de Reafirmación"
   - "Depilación IPL a domicilio. Consultá por nuestro programa especial."
-  - WhatsApp QR + teléfono
+  - Messaging QR + teléfono
 - [ ] Dejar 20 tarjetas en el auto (Uber)
 - [ ] Definir con qué frase empezar la conversación en Uber
 
 ### DÍA 4 — Outreach inicial
-- [ ] Mandar WhatsApp a SOMOSGAY presentando el servicio (aunque sea para después)
+- [ ] Mandar Messaging a SOMOSGAY presentando el servicio (aunque sea para después)
 - [ ] Publicar en 2 grupos de Facebook de belleza/estética en Asunción
 - [ ] Seguir 10 cuentas trans-friendly en IG y empezar a interactuar
 
@@ -130,9 +130,9 @@ Basado en análisis del sitio actual (6 páginas estáticas, contenido en es.jso
 - [ ] Documentar resultados
 
 ### DÍA 6 — Preparación para lanzamiento
-- [ ] Tener lista la planilla de Google Sheets (nombre, WhatsApp, zona, sesiones, pagos)
+- [ ] Tener lista la planilla de Google Sheets (nombre, Messaging, zona, sesiones, pagos)
 - [ ] Escribir los 3 mensajes automáticos de seguimiento
-- [ ] Confirmar precios finales en WhatsApp Business
+- [ ] Confirmar precios finales en Messaging Business
 
 ### DÍA 7 — LANZAMIENTO OFICIAL 🚀
 - [ ] Activar sección en la web
@@ -161,7 +161,7 @@ Basado en análisis del sitio actual (6 páginas estáticas, contenido en es.jso
 
 ---
 
-## PARTE 6: MENSAJES PREPARADOS PARA WHATSAPP
+## PARTE 6: MENSAJES PREPARADOS PARA MESSAGING
 
 ### Mensaje 1: Cliente nueva preguntando por el servicio
 > "Hola! Sí, ofrezco depilación IPL a domicilio. También tengo un programa especial de reafirmación de género con precios accesibles para depilación facial. ¿Querés que te cuente más? Sin compromiso."

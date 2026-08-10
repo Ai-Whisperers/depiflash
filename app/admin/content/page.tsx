@@ -220,8 +220,8 @@ function BusinessSection({ get, set }: { get: (p: string) => string; set: (p: st
     <div className="space-y-4">
       <h2 className="text-lg font-bold text-white mb-4">Información del negocio</h2>
       <Input label="Nombre del sitio" value={get("siteName")} onChange={(v) => set("siteName", v)} placeholder="DepiFlash" />
-      <Input label="WhatsApp número" value={get("whatsapp")} onChange={(v) => set("whatsapp", v)} placeholder="+595 974 202 025" />
-      <Input label="WhatsApp link base" value={get("whatsappLink")} onChange={(v) => set("whatsappLink", v)} placeholder="https://wa.me/595974202025..." />
+      <Input label="Messaging número" value={get("messaging")} onChange={(v) => set("messaging", v)} placeholder="+595 974 202 025" />
+      <Input label="Messaging link base" value={get("messagingLink")} onChange={(v) => set("messagingLink", v)} placeholder="tel:+595974202025..." />
       <Input label="Email" value={get("email")} onChange={(v) => set("email", v)} placeholder="info@depiflash.com.py" />
       <Input label="Instagram URL" value={get("instagram")} onChange={(v) => set("instagram", v)} placeholder="https://www.instagram.com/depiflash.py" />
       <Input label="Cobertura" value={get("coverage")} onChange={(v) => set("coverage", v)} placeholder="Asunción y Gran Asunción" multiline />

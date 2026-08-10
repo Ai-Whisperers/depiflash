@@ -28,7 +28,7 @@ export function Footer({ businessName }: { businessName?: string }) {
             <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-blue-300">Contacto</h4>
             <div className="flex flex-col gap-2 text-sm">
               <a href="mailto:info@superspuma.com.py" className="text-white/80 hover:text-white">info@superspuma.com.py</a>
-              <a href="https://wa.me/595974202025" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">WhatsApp</a>
+              <a href="tel:+595974202025" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white">Messaging</a>
               <span className="text-white/60">+595 981 111 222</span>
             </div>
           </div>

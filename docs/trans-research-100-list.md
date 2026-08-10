@@ -95,7 +95,7 @@
 54. Instagram: hashtags usados por comunidad trans paraguaya
 55. Instagram: cuentas de estética trans-friendly en PY (para colaborar)
 56. TikTok: tendencias trans paraguayas
-57. WhatsApp Business: mejores prácticas para catálogo de servicios
+57. Messaging Business: mejores prácticas para catálogo de servicios
 58. Uber: cuántos viajes hace Dan por día (para calcular alcance de flyers)
 59. Uber: regulación de publicidad dentro del vehículo en Asunción
 
@@ -138,7 +138,7 @@
 83. Testimonios de mujeres trans en Latinoamérica con depilación
 84. ¿Cuál es la tasa de abandono de tratamiento en trans? (no completan las 12 sesiones)
 85. Estrategias para retener clientas trans (recordatorios, seguimiento, comunidad)
-86. ¿Conviene crear un grupo de WhatsApp de soporte para clientas trans?
+86. ¿Conviene crear un grupo de Messaging de soporte para clientas trans?
 87. Protocolo de privacidad de datos para clientas trans (nombre, dirección, fotos)
 
 ---

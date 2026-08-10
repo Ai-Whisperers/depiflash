@@ -8,7 +8,7 @@
 | **Headings** | Playfair Display (serif, elegante) |
 | **Body** | Inter (sans-serif, moderno) |
 | **Voz** | Cálida, profesional, en español paraguayo (vos) |
-| **CTA principal** | WhatsApp — `wa.me/595974202025` |
+| **CTA principal** | Messaging — `wa.me/595974202025` |
 
 ---
 
@@ -42,7 +42,7 @@ Priorizados por impacto en conversión:
 
 | # | Video | Duración | Concepto | Escenas |
 |---|-------|----------|----------|---------|
-| 5 | **Precios Rápidos** | 12s | 3 cards animadas: Axilas Gs.70K / Bikini Gs.80K / Piernas Gs.180K → fade a "Consultame por WhatsApp" | 2 |
+| 5 | **Precios Rápidos** | 12s | 3 cards animadas: Axilas Gs.70K / Bikini Gs.80K / Piernas Gs.180K → fade a "Consultame por Messaging" | 2 |
 | 6 | **Resultados: 3 sesiones** | 9s | "En 3 sesiones ya notás la diferencia" con testimonio de Laura | 2 |
 | 7 | **Vs Cera** | 10s | "Cera: duele, cada mes" → "IPL: sin dolor, permanente" split screen animado | 2 |
 | 8 | **Duración: 15 min** | 7s | "Labio superior: 10 min. Axilas: 15 min. En tu hora de almuerzo 💨" | 1 |
@@ -87,7 +87,7 @@ scene-2 (3s-6s)
 - **Fondo:** gradiente suave primario → acento (#E8A0BF → #C4A4D4)
 - **Headings:** Playfair Display, blanco, tamaño 48-72px, tracking +2
 - **Body:** Inter, blanco/oscuro según fondo, 24-36px
-- **CTA final:** botón estilizado "Escribime al WhatsApp 📲" con bounce
+- **CTA final:** botón estilizado "Escribime al Messaging 📲" con bounce
 - **Logo DepiFlash:** esquina superior (texto "DepiFlash" en Playfair con rayo ⚡)
 
 ### Animaciones GSAP por elemento
@@ -173,7 +173,7 @@ El bottom 15% queda cubierto por el caption/button de Instagram. **NUNCA poner t
 
 ### Día 1 (arrancar YA)
 1. **Hook: Sin Dolor** (9s) — el que más clics va a generar
-2. **Urgencia: 2 Horarios** (5s) — para usar en WhatsApp Status + IG Story
+2. **Urgencia: 2 Horarios** (5s) — para usar en Messaging Status + IG Story
 3. **Domicilio** (8s) — diferencial principal del negocio
 
 ### Día 2

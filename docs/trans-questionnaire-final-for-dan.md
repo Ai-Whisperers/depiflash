@@ -13,7 +13,7 @@
 - [ ] **DepiFlash — Servicio de Reafirmación** (mantiene marca, agrega sub-línea)
 - [ ] **Daya Estética Afirmativa** (marca separada con tu nombre)
 - [ ] **DepiFlash by Daya** (mezcla)
-- [ ] **Sin nombre especial** — todo es DepiFlash, el descuento se comenta por WhatsApp
+- [ ] **Sin nombre especial** — todo es DepiFlash, el descuento se comenta por Messaging
 - [ ] Otro: _______________________________
 
 ### A2. ¿Te presentás como Daya o como Dan para clientas trans?
@@ -22,7 +22,7 @@
 - [ ] **Daya con trans, Dan con cis** — depende del contexto
 - [ ] **Lo que la clienta prefiera** — me adapto
 
-### A3. Foto de perfil en WhatsApp Business para este servicio
+### A3. Foto de perfil en Messaging Business para este servicio
 - [ ] **Mi foto (Daya)** — mostrame la cara
 - [ ] **Logo de DepiFlash** — mantener profesional
 - [ ] **Sin foto** — solo texto
@@ -114,7 +114,7 @@ Confirmás: **Gs. ___________ por sesión con descuento trans**
 ## D. COMUNIDAD / OUTREACH
 
 ### D1. ¿Querés que intente contactar SOMOSGAY por vos?
-- [ ] **Sí, contactalos** — mandate un WhatsApp presentándome
+- [ ] **Sí, contactalos** — mandate un Messaging presentándome
 - [ ] **Dame el contacto y lo hago yo**
 - [ ] **Todavía no** — quiero tener todo listo primero
 
@@ -138,7 +138,7 @@ Confirmás: **Gs. ___________ por sesión con descuento trans**
 
 - [ ] **Agregar sección "Servicios Especiales" en /servicios** con texto sutil
 - [ ] **Agregar pregunta en FAQ** sobre descuento por reafirmación de género
-- [ ] **No tocar el sitio por ahora** — solo WhatsApp
+- [ ] **No tocar el sitio por ahora** — solo Messaging
 - [ ] **OTRO:** _______________________________
 
 ### E2. ¿Qué texto poner en la web? (opciones)
@@ -198,14 +198,14 @@ Zona corporal:
 - [ ] **Me adapto al horario de ella**
 
 ### G3. ¿Dónde guardás los datos de las clientas?
-- [ ] **WhatsApp nomás** — los chats tienen todo
+- [ ] **Messaging nomás** — los chats tienen todo
 - [ ] **Planilla de Excel/Google Sheets** — nombre, zona, sesiones, pago
 - [ ] **Cuaderno físico** — anoto todo a mano
 - [ ] **App / CRM** — usame una app
 - [ ] **Ningún lado** — no guardo datos
 
 ### G4. ¿Querés un sistema simple de seguimiento de clientas?
-- [ ] **Sí** — algo tipo "mandar WhatsApp automático a los 20 días para recordar próxima sesión"
+- [ ] **Sí** — algo tipo "mandar Messaging automático a los 20 días para recordar próxima sesión"
 - [ ] **No** — lo manejo yo manualmente
 - [ ] **Tal vez más adelante**
 
